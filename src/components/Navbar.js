@@ -8,7 +8,7 @@ const Container = styled.div`
 
 const Navbar = () => {
   return (
-    <Container >Navbar</Container >
+    <Container>Navbar</Container>
   )
 }
 

@@ -21,7 +21,9 @@ const Center = styled.div`
   flex: 1;
 `;
 
-const Logo = styled.div``;
+const Logo = styled.div`
+  font-weight: bold;
+`;
 
 const Right = styled.div`
   flex: 1;

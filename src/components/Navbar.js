@@ -13,15 +13,15 @@ const Wrapper = styled.div`
 `;
 
 const Left = styled.div`
-  width: 33.3%;
+  flex: 1;
 `;
 
 const Center = styled.div`
-  width: 33.3%;
+  flex: 1;
 `;
 
 const Right = styled.div`
-  width: 33.3%;
+  flex: 1;
 `;
 
 const Navbar = () => {

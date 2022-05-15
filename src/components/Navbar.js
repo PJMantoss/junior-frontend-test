@@ -20,7 +20,9 @@ const Center = styled.div`
   width: 33.3%;
 `;
 
-const Right = styled.div``;
+const Right = styled.div`
+  width: 33.3%;
+`;
 
 const Navbar = () => {
   return (

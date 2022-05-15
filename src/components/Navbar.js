@@ -11,14 +11,18 @@ const Wrapper = styled.div`
 `;
 
 const Left = styled.div``;
-const Right = styled.div``;
+
 const Center = styled.div``;
+
+const Right = styled.div``;
 
 const Navbar = () => {
   return (
     <Container>
       <Wrapper>
-        Navbar
+        <Left></Left>
+        <Center></Center>
+        <Right></Right>
       </Wrapper>
     </Container>
   )

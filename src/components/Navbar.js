@@ -31,6 +31,8 @@ const Right = styled.div`
   flex: 1;
 `;
 
+const MenuItem = styled.div``;
+
 const Navbar = () => {
   return (
     <Container>

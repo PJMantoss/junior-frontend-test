@@ -23,7 +23,8 @@ const Center = styled.div`
 `;
 
 const Logo = styled.img`
-  font-weight: bold;
+  width: 100%;
+  height: 100%;
 `;
 
 const Right = styled.div`
@@ -36,7 +37,7 @@ const Navbar = () => {
       <Wrapper>
         <Left>Left</Left>
         <Center>
-          <Logo>Test.</Logo>
+          <Logo src={'./assets/logo.png'}>Test.</Logo>
         </Center>
         <Right>Right</Right>
       </Wrapper>

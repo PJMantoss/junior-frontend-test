@@ -10,6 +10,7 @@ const Wrapper = styled.div`
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `;
 
 const Left = styled.div`
@@ -19,6 +20,8 @@ const Left = styled.div`
 const Center = styled.div`
   flex: 1;
 `;
+
+const Logo = styled.div``;
 
 const Right = styled.div`
   flex: 1;

@@ -44,7 +44,9 @@ const Navbar = () => {
         <Center>
           <Logo src={'./assets/logo.png'} />
         </Center>
-        <Right></Right>
+        <Right>
+          <MenuItem></MenuItem>
+        </Right>
       </Wrapper>
     </Container>
   )

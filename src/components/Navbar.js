@@ -37,7 +37,7 @@ const Navbar = () => {
       <Wrapper>
         <Left>Left</Left>
         <Center>
-          <Logo src={'./assets/logo.png'}>Test.</Logo>
+          <Logo src={'./assets/logo.png'} />
         </Center>
         <Right>Right</Right>
       </Wrapper>

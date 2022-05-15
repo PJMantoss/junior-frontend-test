@@ -13,7 +13,9 @@ const Wrapper = styled.div`
 const Navbar = () => {
   return (
     <Container>
-      Navbar
+      <Wrapper>
+        Navbar
+      </Wrapper>
     </Container>
   )
 }

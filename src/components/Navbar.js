@@ -34,7 +34,9 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>Left</Left>
-        <Center>Center</Center>
+        <Center>
+          <Logo>Test.</Logo>
+        </Center>
         <Right>Right</Right>
       </Wrapper>
     </Container>

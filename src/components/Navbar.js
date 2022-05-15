@@ -20,9 +20,9 @@ const Navbar = () => {
   return (
     <Container>
       <Wrapper>
-        <Left></Left>
-        <Center></Center>
-        <Right></Right>
+        <Left>Left</Left>
+        <Center>Center</Center>
+        <Right>Right</Right>
       </Wrapper>
     </Container>
   )

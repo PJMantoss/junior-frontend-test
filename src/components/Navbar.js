@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Cart from '@styled-icons/fluentui-system-regular/Cart';
 
 const Container = styled.div`
   height: 80px;

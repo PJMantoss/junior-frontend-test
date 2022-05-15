@@ -12,7 +12,9 @@ const Wrapper = styled.div`
   justify-content: space-between;
 `;
 
-const Left = styled.div``;
+const Left = styled.div`
+  width: 33.3%;
+`;
 
 const Center = styled.div``;
 

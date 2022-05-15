@@ -10,6 +10,10 @@ const Wrapper = styled.div`
   padding: 10px 20px;
 `;
 
+const Left = styled.div``;
+const Right = styled.div``;
+const Center = styled.div``;
+
 const Navbar = () => {
   return (
     <Container>

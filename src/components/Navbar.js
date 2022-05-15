@@ -45,7 +45,9 @@ const Navbar = () => {
           <Logo src={'./assets/logo.png'} />
         </Center>
         <Right>
-          <MenuItem></MenuItem>
+          <MenuItem>
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          </MenuItem>
         </Right>
       </Wrapper>
     </Container>

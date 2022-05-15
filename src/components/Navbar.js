@@ -6,6 +6,8 @@ const Container = styled.div`
   background: white;
 `;
 
+const Wrapper = styled.div``;
+
 const Navbar = () => {
   return (
     <Container>

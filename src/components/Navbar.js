@@ -23,8 +23,8 @@ const Center = styled.div`
 `;
 
 const Logo = styled.img`
-  width: 100%;
-  height: 100%;
+  width: 33px;
+  height: 30px;
 `;
 
 const Right = styled.div`

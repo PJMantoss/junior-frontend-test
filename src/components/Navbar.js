@@ -40,6 +40,8 @@ const MenuItem = styled.div`
 
 const styledNavLink = styled(NavLink)`
   color: #1d1f22;
+
+  &.${props => props.activeClassName}()
 `;
 
 const Navbar = () => {

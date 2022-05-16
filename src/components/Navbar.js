@@ -45,7 +45,7 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>
-          <MenuItem></MenuItem>
+          
         </Left>
         <Center>
           <Logo src={'./assets/logo.png'} />

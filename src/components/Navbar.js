@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 
 const Container = styled.div`
   height: 80px;
@@ -38,17 +38,17 @@ const MenuItem = styled.div`
   cursor: pointer;
 `;
 
-const StyledNavLink = styled(NavLink)`
-  color: #1d1f22;
-  font-style: raleway;
-  font-size: 16px;
-  line-height: 19.62px;
-  font-weight: 400;
+// const StyledNavLink = styled(NavLink)`
+//   color: #1d1f22;
+//   font-style: raleway;
+//   font-size: 16px;
+//   line-height: 19.62px;
+//   font-weight: 400;
 
-  &.${props => props.activeClassName}{
-    color: #5ece7b;
-  }
-`;
+//   &.${props => props.activeClassName}{
+//     color: #5ece7b;
+//   }
+// `;
 {/* <StyledNavLink to="/" activeClassName="any">Women</StyledNavLink>
           <StyledNavLink activeClassName="any">Men</StyledNavLink> */}
 

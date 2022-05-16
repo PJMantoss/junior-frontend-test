@@ -47,12 +47,12 @@ const Navbar = () => {
           <Logo src={'./assets/logo.png'} />
         </Center>
         <Right>
-          <MenuItem>
+          
             <NavLink to="/cart">
               <i class="fa fa-shopping-cart" aria-hidden="true"></i>
               Cart(0)
             </NavLink>
-          </MenuItem>
+          
         </Right>
       </Wrapper>
     </Container>

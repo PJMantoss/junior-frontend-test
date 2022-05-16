@@ -43,6 +43,7 @@ const styledNavLink = styled(NavLink)`
   font-style: raleway;
   font-size: 16px;
   line-height: 19.62px;
+  font-weight: 400;
 
   &.${props => props.activeClassName}{
     color: #5ece7b;

@@ -40,8 +40,9 @@ const MenuItem = styled.div`
 
 const styledNavLink = styled(NavLink)`
   color: #1d1f22;
-  font-style: ;
+  font-style: raleway;
   font-size: 16px;
+  line-height: 19.62px;
 
   &.${props => props.activeClassName}{
     color: #5ece7b;

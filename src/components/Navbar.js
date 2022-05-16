@@ -55,7 +55,7 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>
-          <StyledNavLink activeClassName="any">Women</StyledNavLink>
+          <StyledNavLink to="/" activeClassName="any">Women</StyledNavLink>
           <StyledNavLink activeClassName="any">Men</StyledNavLink>
         </Left>
         <Center>

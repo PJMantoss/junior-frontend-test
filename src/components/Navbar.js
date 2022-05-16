@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Container = styled.div`
   height: 80px;
@@ -38,7 +38,7 @@ const MenuItem = styled.div`
   cursor: pointer;
 `;
 
-const StyledNavLink = styled(Link)`
+const StyledNavLink = styled(NavLink)`
   color: #1d1f22;
   font-style: raleway;
   font-size: 16px;

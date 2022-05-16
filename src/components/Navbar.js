@@ -38,7 +38,9 @@ const MenuItem = styled.div`
   cursor: pointer;
 `;
 
-const styledNavLink = styled(NavLink)``;
+const styledNavLink = styled(NavLink)`
+  color: #1d1f22;
+`;
 
 const Navbar = () => {
   return (

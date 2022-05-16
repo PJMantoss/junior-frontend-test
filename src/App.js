@@ -6,8 +6,10 @@ import './App.css';
 function App() {
   return (
     <>
-      <Routes></Routes>
-      <Home />
+      <Navbar />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+      </Routes>
     </>
   );
 }

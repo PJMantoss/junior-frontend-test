@@ -48,7 +48,7 @@ const Navbar = () => {
         </Center>
         <Right>
           <MenuItem>
-            <i class="fa fa-shopping-cart"></i>
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
             Cart(0)
           </MenuItem>
         </Right>

@@ -48,10 +48,8 @@ const Navbar = () => {
         </Center>
         <Right>
           <MenuItem>
-            <NavLink>
-              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-              Cart(0)
-            </NavLink>
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            Cart(0)
           </MenuItem>
         </Right>
       </Wrapper>

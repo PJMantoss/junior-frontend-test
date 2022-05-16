@@ -49,14 +49,15 @@ const StyledNavLink = styled(NavLink)`
     color: #5ece7b;
   }
 `;
+{/* <StyledNavLink to="/" activeClassName="any">Women</StyledNavLink>
+          <StyledNavLink activeClassName="any">Men</StyledNavLink> */}
 
 const Navbar = () => {
   return (
     <Container>
       <Wrapper>
         <Left>
-          <StyledNavLink to="/" activeClassName="any">Women</StyledNavLink>
-          <StyledNavLink activeClassName="any">Men</StyledNavLink>
+          Left
         </Left>
         <Center>
           <Logo src={'./assets/logo.png'} />

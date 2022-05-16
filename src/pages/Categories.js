@@ -13,6 +13,30 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
+const Left = styled.div`
+  flex: 1;
+`;
+
+const Center = styled.div`
+  flex: 1;
+  text-align: center;
+`;
+
+const Logo = styled.img`
+  width: 33px;
+  height: 30px;
+`;
+
+const Right = styled.div`
+  flex: 1;
+  text-align: right;
+`;
+
+const MenuItem = styled.div`
+  font-size: 14px;
+  cursor: pointer;
+`;
+
 const Categories = () => {
 
     const DisplayProducts = () => {

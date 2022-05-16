@@ -1,10 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Container = styled.div`
-  height: 80px;
-  background: white;
-`;
+const Container = styled.div``;
 
 const Wrapper = styled.div`
   padding: 10px 20px;

@@ -38,11 +38,15 @@ const MenuItem = styled.div`
   cursor: pointer;
 `;
 
+const styledNavLink = styled(NavLink)``;
+
 const Navbar = () => {
   return (
     <Container>
       <Wrapper>
-        <Left>Left</Left>
+        <Left>
+          <MenuItem></MenuItem>
+        </Left>
         <Center>
           <Logo src={'./assets/logo.png'} />
         </Center>

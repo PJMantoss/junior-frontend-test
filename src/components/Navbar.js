@@ -19,7 +19,7 @@ const Left = styled.div`
 
 const Center = styled.div`
   flex: 1;
-  text-align: center;
+  text-align: right;
 `;
 
 const Logo = styled.img`

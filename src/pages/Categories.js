@@ -39,7 +39,14 @@ const Categories = () => {
     const DisplayProducts = () => {
         return(
             <Container>
-                <Wrapper></Wrapper>
+                <Wrapper>
+                    <Left></Left>
+
+                    <Center></Center>
+
+                    <Right></Right>
+                </Wrapper>
+                {}
             </Container>
         )
     };

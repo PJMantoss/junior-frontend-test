@@ -38,7 +38,7 @@ const MenuItem = styled.div`
   cursor: pointer;
 `;
 
-const styledNavLink = styled(NavLink)`
+const StyledNavLink = styled(NavLink)`
   color: #1d1f22;
   font-style: raleway;
   font-size: 16px;

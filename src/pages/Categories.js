@@ -15,8 +15,14 @@ const Wrapper = styled.div`
 
 const Categories = () => {
 
-    const DisplayProducts = () => {};
-    
+    const DisplayProducts = () => {
+        return(
+            <Container>
+                <Wrapper></Wrapper>
+            </Container>
+        )
+    };
+
   return (
     <div>Categories</div>
   )

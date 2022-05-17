@@ -43,7 +43,7 @@ const CategoryButton = styled.a`
   line-height: 19.62px;
   font-weight: 400;
   padding: 5px 8px;
-  margin-right: 2px;
+  margin: 2px;
   width: 40px;
   cursor: pointer;
   text-transform: uppercase;
@@ -68,21 +68,18 @@ const Categories = () => {
                 <Wrapper>
                     <Left>
                       <CategoryButton 
-                        activeClassName="any"
                         onClick={() => filterProducts()}
                       >
                         women
                       </CategoryButton>
 
                       <CategoryButton 
-                        activeClassName="any"
                         onClick={() => filterProducts()}
                       >
                         men
                       </CategoryButton>
 
                       <CategoryButton 
-                        activeClassName="any"
                         onClick={() => filterProducts()}
                       >
                         kids

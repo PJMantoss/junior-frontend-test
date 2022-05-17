@@ -46,7 +46,11 @@ const Categories = () => {
                       <Logo src={'./assets/logo.png'} />
                     </Center>
 
-                    <Right></Right>
+                    <Right>
+                      <MenuItem>
+                        Cart(0)
+                      </MenuItem>
+                    </Right>
                 </Wrapper>
                 {}
             </Container>

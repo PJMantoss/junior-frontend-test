@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-const Left = styled.ul`
+const Left = styled.div`
   flex: 1;
 `;
 

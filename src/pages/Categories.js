@@ -12,7 +12,6 @@ const Wrapper = styled.div`
 
 const Left = styled.div`
   flex: 1;
-  text-align: center;
 `;
 
 const Center = styled.div`
@@ -45,7 +44,7 @@ const CategoryButton = styled.a`
   font-weight: 400;
   padding: 5px 8px;
   margin-right: 2px;
-  width: 90px;
+  width: 40px;
   cursor: pointer;
   text-transform: uppercase;
 

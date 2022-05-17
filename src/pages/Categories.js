@@ -42,7 +42,9 @@ const Categories = () => {
                 <Wrapper>
                     <Left></Left>
 
-                    <Center></Center>
+                    <Center>
+                      <Logo src={'./assets/logo.png'} />
+                    </Center>
 
                     <Right></Right>
                 </Wrapper>

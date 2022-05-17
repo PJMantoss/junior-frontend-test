@@ -50,7 +50,8 @@ const CategoryButton = styled.a`
 
   &:active{
     color: #5ece7b;
-    text-decoration: underlined;
+    text-decoration: underline;
+    border-bottom: 2px solid #5ece7b;
   }
 
   &:visited{

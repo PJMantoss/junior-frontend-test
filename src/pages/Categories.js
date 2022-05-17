@@ -36,6 +36,11 @@ const MenuItem = styled.div`
 
 const CatButton = styled.button`
   border: 0;
+  color: #1d1f22;
+  font-style: raleway;
+  font-size: 16px;
+  line-height: 19.62px;
+  font-weight: 400;
 `;
 
 const Categories = () => {

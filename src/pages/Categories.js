@@ -36,6 +36,7 @@ const MenuItem = styled.div`
 
 const CategoryButton = styled.button`
   border: 0;
+  background: transparent;
   color: #1d1f22;
   font-style: raleway;
   font-size: 16px;

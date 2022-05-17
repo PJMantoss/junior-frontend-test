@@ -42,6 +42,7 @@ const CategoryButton = styled.button`
   line-height: 19.62px;
   font-weight: 400;
   cursor: pointer;
+  text-transform: uppercase;
 `;
 
 const Categories = () => {

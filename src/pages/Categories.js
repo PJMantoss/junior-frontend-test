@@ -45,7 +45,7 @@ const CategoryButton = styled.button`
   cursor: pointer;
   text-transform: uppercase;
 
-  &.${props => props.activeClassName}{
+  ${props => props.activeClassName}{
     color: #5ece7b;
   }
 `;

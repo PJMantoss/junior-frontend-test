@@ -34,13 +34,14 @@ const MenuItem = styled.div`
   cursor: pointer;
 `;
 
-const CatButton = styled.button`
+const CategoryButton = styled.button`
   border: 0;
   color: #1d1f22;
   font-style: raleway;
   font-size: 16px;
   line-height: 19.62px;
   font-weight: 400;
+  cursor: pointer;
 `;
 
 const Categories = () => {

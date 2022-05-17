@@ -42,7 +42,7 @@ const CategoryButton = styled.a`
   font-size: 16px;
   line-height: 19.62px;
   font-weight: 400;
-  padding: 3px 5px;
+  padding: 2px 4px 15px;
   margin: 2px;
   cursor: pointer;
   text-transform: uppercase;

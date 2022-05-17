@@ -46,6 +46,7 @@ const CategoryButton = styled.a`
   margin: 2px;
   cursor: pointer;
   text-transform: uppercase;
+  text-decoration: none;
 
   &:active{
     color: #5ece7b;

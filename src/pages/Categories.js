@@ -51,7 +51,9 @@ const Categories = () => {
         return(
             <Container>
                 <Wrapper>
-                    <Left></Left>
+                    <Left>
+                      <CategoryButton onClick={() => filterproducts()}></CategoryButton>
+                    </Left>
 
                     <Center>
                       <Logo src={'./assets/logo.png'} />

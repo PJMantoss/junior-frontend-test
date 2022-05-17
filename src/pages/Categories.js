@@ -45,6 +45,8 @@ const CategoryButton = styled.button`
   text-transform: uppercase;
 `;
 
+const filterProducts = () => {};
+
 const Categories = () => {
 
     const DisplayProducts = () => {
@@ -52,15 +54,15 @@ const Categories = () => {
             <Container>
                 <Wrapper>
                     <Left>
-                      <CategoryButton onClick={() => filterproducts()}>
+                      <CategoryButton onClick={() => filterProducts()}>
                         women
                       </CategoryButton>
 
-                      <CategoryButton onClick={() => filterproducts()}>
+                      <CategoryButton onClick={() => filterProducts()}>
                         men
                       </CategoryButton>
 
-                      <CategoryButton onClick={() => filterproducts()}>
+                      <CategoryButton onClick={() => filterProducts()}>
                         kids
                       </CategoryButton>
                     </Left>

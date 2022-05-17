@@ -34,7 +34,9 @@ const MenuItem = styled.div`
   cursor: pointer;
 `;
 
-const CatButton = styled.button``;
+const CatButton = styled.button`
+  border: 0;
+`;
 
 const Categories = () => {
 

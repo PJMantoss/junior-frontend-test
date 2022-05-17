@@ -52,7 +52,17 @@ const Categories = () => {
             <Container>
                 <Wrapper>
                     <Left>
-                      <CategoryButton onClick={() => filterproducts()}></CategoryButton>
+                      <CategoryButton onClick={() => filterproducts()}>
+                        women
+                      </CategoryButton>
+
+                      <CategoryButton onClick={() => filterproducts()}>
+                        men
+                      </CategoryButton>
+
+                      <CategoryButton onClick={() => filterproducts()}>
+                        kids
+                      </CategoryButton>
                     </Left>
 
                     <Center>

@@ -34,8 +34,8 @@ const MenuItem = styled.div`
   cursor: pointer;
 `;
 
-const CategoryButton = styled.button`
-  border: 0;
+const CategoryButton = styled.a`
+  display: inline-block;
   background: transparent;
   color: #1d1f22;
   font-style: raleway;
@@ -47,6 +47,7 @@ const CategoryButton = styled.button`
 
   &:active{
     color: #5ece7b;
+    text-decoration: underlined;
   }
 
   &:visited{

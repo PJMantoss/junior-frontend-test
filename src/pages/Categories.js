@@ -59,15 +59,24 @@ const Categories = () => {
             <Container>
                 <Wrapper>
                     <Left>
-                      <CategoryButton onClick={() => filterProducts()}>
+                      <CategoryButton 
+                        activeClassName="any"
+                        onClick={() => filterProducts()}
+                      >
                         women
                       </CategoryButton>
 
-                      <CategoryButton onClick={() => filterProducts()}>
+                      <CategoryButton 
+                        activeClassName="any"
+                        onClick={() => filterProducts()}
+                      >
                         men
                       </CategoryButton>
 
-                      <CategoryButton onClick={() => filterProducts()}>
+                      <CategoryButton 
+                        activeClassName="any"
+                        onClick={() => filterProducts()}
+                      >
                         kids
                       </CategoryButton>
                     </Left>

@@ -44,6 +44,10 @@ const CategoryButton = styled.button`
   font-weight: 400;
   cursor: pointer;
   text-transform: uppercase;
+
+  &.${props => props.activeClassName}{
+    color: #5ece7b;
+  }
 `;
 
 const filterProducts = () => {};

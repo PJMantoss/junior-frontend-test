@@ -83,7 +83,9 @@ const Categories = () => {
     };
 
   return (
-    <div>Categories</div>
+    <div>
+      {<DisplayProducts/>}
+    </div>
   )
 }
 

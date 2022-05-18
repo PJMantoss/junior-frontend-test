@@ -64,7 +64,7 @@ const Products = () => {
 
   const filterProducts = () => {
     const updatedList = data.filter();
-    setFilter(updatedList)
+    setFilter(updatedList);
   };
 
     const DisplayProducts = () => {

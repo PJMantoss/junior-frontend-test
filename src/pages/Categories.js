@@ -58,7 +58,9 @@ const CategoryButton = styled.a`
   }
 `;
 
-const filterProducts = () => {};
+const filterProducts = () => {
+  const updatedList;
+};
 
 const Categories = () => {
 

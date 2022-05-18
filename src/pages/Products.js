@@ -62,8 +62,8 @@ const Products = () => {
   const [data, setData] = useState([]);
   const [filter, setFilter] = useState(data);
 
-  const filterProducts = () => {
-    const updatedList = data.filter();
+  const filterProducts = (cat) => {
+    const updatedList = data.filter(prd => prd.category === cat);
     setFilter(updatedList);
   };
 

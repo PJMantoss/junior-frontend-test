@@ -63,6 +63,7 @@ const filterProducts = () => {
 };
 
 const Products = () => {
+  const [] = useState();
 
     const DisplayProducts = () => {
         return(

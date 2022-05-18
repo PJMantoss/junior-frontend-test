@@ -58,13 +58,14 @@ const CategoryButton = styled.a`
   }
 `;
 
-const filterProducts = () => {
-  const updatedList;
-};
-
 const Products = () => {
   const [data, setData] = useState([]);
   const [filter, setFilter] = useState(data);
+
+  const filterProducts = () => {
+    const updatedList = data.filter();
+    setFilter(updatedList)
+  };
 
     const DisplayProducts = () => {
         return(

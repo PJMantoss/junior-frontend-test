@@ -62,7 +62,7 @@ const filterProducts = () => {
   const updatedList;
 };
 
-const Categories = () => {
+const Products = () => {
 
     const DisplayProducts = () => {
         return(
@@ -110,4 +110,4 @@ const Categories = () => {
   )
 }
 
-export default Categories
+export default Products

@@ -64,7 +64,7 @@ const filterProducts = () => {
 
 const Products = () => {
   const [data, setData] = useState([]);
-  const [] = useState();
+  const [filter, setFilter] = useState(data);
 
     const DisplayProducts = () => {
         return(

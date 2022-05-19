@@ -82,6 +82,8 @@ const Products = () => {
 
   const {error, data, loading} = useQuery(GET_PRODUCTS);
 
+  console.log({error, data, loading});
+
   const filterProducts = (cat) => {
     const updatedList = data.filter(prd => prd.category === cat);
     // setFilter(updatedList);

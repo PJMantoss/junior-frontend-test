@@ -101,7 +101,7 @@ const Products = () => {
                       </CategoryButton>
 
                       <CategoryButton 
-                        onClick={filterProducts('clothes')}
+                        onClick={() => filterProducts('clothes')}
                       >
                         clothes
                       </CategoryButton>

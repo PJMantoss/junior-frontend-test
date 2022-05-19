@@ -85,7 +85,7 @@ const Products = () => {
   console.log({error, data, loading});
 
   const filterProducts = (cat) => {
-    const updatedList = data.categories.filter(x => x.name === cat);
+    const updatedList = data.categories.filter(x => x.category === cat);
     setFilter(updatedList);
   };
 

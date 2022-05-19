@@ -80,12 +80,12 @@ const Products = () => {
 
   const {error, data, loading} = useQuery(GET_PRODUCTS);
 
-  const [filter, setFilter] = useState(data);
+  const [filter, setFilter] = useState(data.categories);
 
   console.log({error, data, loading});
 
   const filterProducts = (cat) => {
-    const updatedList = data.categories.filter(prd => prd.name === cat);
+    const updatedList = data.categories.filter(x => x.name === cat);
     setFilter(updatedList);
   };
 
@@ -123,7 +123,7 @@ const Products = () => {
                       </MenuItem>
                     </Right>
                 </Wrapper>
-                {filter.products.map(product => {
+                {/* {filter.products.map(product => {
                   return(
                     <Wrapper>
                       <div key={product.id}>
@@ -133,7 +133,7 @@ const Products = () => {
                       </div>
                     </Wrapper>
                   )
-                })}
+                })} */}
             </Container>
         )
     };

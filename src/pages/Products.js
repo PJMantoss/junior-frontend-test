@@ -59,7 +59,22 @@ const CategoryButton = styled.a`
   }
 `;
 
-const GET_PRODUCTS = gql``;
+const GET_PRODUCTS = gql`
+  query {
+  categories{
+    name,
+    products{
+        id,
+        name,
+      gallery,
+      prices {
+        currency{symbol},
+        amount
+      }
+  }
+  }
+}
+`;
 
 const Products = () => {
   const [data, setData] = useState([]);

@@ -66,11 +66,11 @@ const GET_PRODUCTS = gql`
     products{
         id,
         name,
-      gallery,
-      prices {
-        currency{symbol},
-        amount
-      }
+        gallery,
+        prices {
+          currency{symbol},
+          amount
+        }
   }
   }
 }

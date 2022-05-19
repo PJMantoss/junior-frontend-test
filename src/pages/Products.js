@@ -80,12 +80,12 @@ const Products = () => {
 
   const {error, data, loading} = useQuery(GET_PRODUCTS);
 
-  const [filter, setFilter] = useState(null);
+  const [filter, setFilter] = useState(data);
 
   console.log({error, data, loading});
 
   const filterProducts = (cat) => {
-    const updatedList = data.categories.filter(name => name.name === cat);
+    const updatedList = data.categories.filter(category => category.name === cat);
     setFilter(updatedList);
   };
 

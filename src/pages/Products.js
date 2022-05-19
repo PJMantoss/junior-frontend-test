@@ -80,17 +80,18 @@ const Products = () => {
 
   const {error, data, loading} = useQuery(GET_PRODUCTS);
 
-  const [filter, setFilter] = useState(data);
+  const [filter, setFilter] = useState(null);
 
   console.log({error, data, loading});
 
   const filterProducts = (cat) => {
-    const updatedList = categories.filter(x => x.name === cat);
+    const updatedList = data.categories.filter(name => name.name === cat);
     setFilter(updatedList);
   };
 
     const DisplayProducts = () => {
         return(
+          <>
             <Container>
                 <Wrapper>
                     <Left>
@@ -101,7 +102,7 @@ const Products = () => {
                       </CategoryButton>
 
                       <CategoryButton 
-                        onClick={() => filterProducts('clothes')}
+                        onClick={() => filterProducts("clothes")}
                       >
                         clothes
                       </CategoryButton>
@@ -123,18 +124,19 @@ const Products = () => {
                       </MenuItem>
                     </Right>
                 </Wrapper>
-                {/* {data.categories.products.map(product => {
+            </Container>
+            {data.categories.products.map(product => {
                   return(
-                    <Wrapper>
+                    <div>
                       <div key={product.id}>
                         <img src={product.gallery[0]} alt={product.name} />
                         <h3>{product.name}</h3>
                         <p>{product.prices[0].currency}{product.prices[0].amount}</p>
                       </div>
-                    </Wrapper>
+                    </div>
                   )
-                })} */}
-            </Container>
+                })}
+          </>
         )
     };
 

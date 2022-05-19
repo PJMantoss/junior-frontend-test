@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { useQuery, gql } from '@apollo/client';
 
@@ -77,12 +77,12 @@ const GET_PRODUCTS = gql`
 `;
 
 const Products = () => {
-  // const [data, setData] = useState([]);
-  // const [filter, setFilter] = useState(data);
 
   const {error, data, loading} = useQuery(GET_PRODUCTS);
 
-  console.log({error, data, loading});
+  const [filter, setFilter] = useState(data);
+
+  // console.log({error, data, loading});
 
   const filterProducts = (cat) => {
     const updatedList = data.filter(prd => prd.category === cat);
@@ -123,7 +123,7 @@ const Products = () => {
                       </MenuItem>
                     </Right>
                 </Wrapper>
-                {data.categories.map()}
+                {data.categories.map(category => {})}
             </Container>
         )
     };

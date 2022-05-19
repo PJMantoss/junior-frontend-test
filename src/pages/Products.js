@@ -59,6 +59,8 @@ const CategoryButton = styled.a`
   }
 `;
 
+const GET_PRODUCTS = gql``;
+
 const Products = () => {
   const [data, setData] = useState([]);
   const [filter, setFilter] = useState(data);

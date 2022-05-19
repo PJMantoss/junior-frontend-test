@@ -123,7 +123,7 @@ const Products = () => {
                       </MenuItem>
                     </Right>
                 </Wrapper>
-                {}
+                {data.categories.map()}
             </Container>
         )
     };

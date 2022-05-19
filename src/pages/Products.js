@@ -82,7 +82,7 @@ const Products = () => {
 
   const [filter, setFilter] = useState(data.categories);
 
-  // console.log({error, data, loading});
+  console.log({error, data, loading});
 
   const filterProducts = (cat) => {
     const updatedList = data.categories.filter(prd => prd.name === cat);
@@ -123,7 +123,7 @@ const Products = () => {
                       </MenuItem>
                     </Right>
                 </Wrapper>
-                {data.categories.products.map(product => {
+                {filter.products.map(product => {
                   return(
                     <div>
                       <img src={product.gallery[0]} alt={product.name} />

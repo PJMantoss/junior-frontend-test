@@ -91,8 +91,7 @@ const Products = () => {
 
     const DisplayProducts = () => {
         return(
-          <>
-            <Container>
+          <Container>
                 <Wrapper>
                     <Left>
                       <CategoryButton 
@@ -102,7 +101,7 @@ const Products = () => {
                       </CategoryButton>
 
                       <CategoryButton 
-                        onClick={() => filterProducts("clothes")}
+                        onClick={() => filterProducts('clothes')}
                       >
                         clothes
                       </CategoryButton>
@@ -124,19 +123,16 @@ const Products = () => {
                       </MenuItem>
                     </Right>
                 </Wrapper>
-            </Container>
-            {data.categories.products.map(product => {
+                {data.categories.products.map(product => {
                   return(
-                    <div>
                       <div key={product.id}>
                         <img src={product.gallery[0]} alt={product.name} />
                         <h3>{product.name}</h3>
                         <p>{product.prices[0].currency}{product.prices[0].amount}</p>
                       </div>
-                    </div>
                   )
                 })}
-          </>
+            </Container>
         )
     };
 

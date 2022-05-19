@@ -80,7 +80,7 @@ const Products = () => {
 
   const {error, data, loading} = useQuery(GET_PRODUCTS);
 
-  const [filter, setFilter] = useState(data.categories);
+  const [filter, setFilter] = useState(data);
 
   console.log({error, data, loading});
 
@@ -123,7 +123,7 @@ const Products = () => {
                       </MenuItem>
                     </Right>
                 </Wrapper>
-                {filter.products.map(product => {
+                {/* {filter.products.map(product => {
                   return(
                       <div key={product.id}>
                         <img src={product.gallery[0]} alt={product.name} />
@@ -131,7 +131,7 @@ const Products = () => {
                         <p>{product.prices[0].currency}{product.prices[0].amount}</p>
                       </div>
                   )
-                })}
+                })} */}
             </Container>
         )
     };

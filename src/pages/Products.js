@@ -97,19 +97,19 @@ const Products = () => {
                       <CategoryButton 
                         onClick={() => filterProducts()}
                       >
-                        women
+                        all
                       </CategoryButton>
 
                       <CategoryButton 
                         onClick={() => filterProducts()}
                       >
-                        men
+                        clothes
                       </CategoryButton>
 
                       <CategoryButton 
                         onClick={() => filterProducts()}
                       >
-                        kids
+                        tech
                       </CategoryButton>
                     </Left>
 

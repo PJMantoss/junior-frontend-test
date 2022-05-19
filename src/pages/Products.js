@@ -123,7 +123,15 @@ const Products = () => {
                       </MenuItem>
                     </Right>
                 </Wrapper>
-                {data.categories.map(category => {})}
+                {data.categories.products.map(product => {
+                  return(
+                    <div>
+                      <img src={product.gallery[0]} alt={product.name} />
+                      <h3>{product.name}</h3>
+                      <p>{product.prices[0].currency}{product.prices[0].amount}</p>
+                    </div>
+                  )
+                })}
             </Container>
         )
     };

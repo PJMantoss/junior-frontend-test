@@ -77,8 +77,10 @@ const GET_PRODUCTS = gql`
 `;
 
 const Products = () => {
-  const [data, setData] = useState([]);
-  const [filter, setFilter] = useState(data);
+  // const [data, setData] = useState([]);
+  // const [filter, setFilter] = useState(data);
+
+  const {error, data, loading} = useQuery(GET_PRODUCTS);
 
   const filterProducts = (cat) => {
     const updatedList = data.filter(prd => prd.category === cat);

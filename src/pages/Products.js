@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import { useQuery, gql } from '@apollo/client';
 
 const Container = styled.div``;
 

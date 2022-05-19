@@ -125,11 +125,13 @@ const Products = () => {
                 </Wrapper>
                 {filter.products.map(product => {
                   return(
-                    <div>
-                      <img src={product.gallery[0]} alt={product.name} />
-                      <h3>{product.name}</h3>
-                      <p>{product.prices[0].currency}{product.prices[0].amount}</p>
-                    </div>
+                    <Wrapper>
+                      <div key={product.id}>
+                        <img src={product.gallery[0]} alt={product.name} />
+                        <h3>{product.name}</h3>
+                        <p>{product.prices[0].currency}{product.prices[0].amount}</p>
+                      </div>
+                    </Wrapper>
                   )
                 })}
             </Container>

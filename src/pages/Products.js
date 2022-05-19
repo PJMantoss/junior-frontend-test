@@ -123,7 +123,7 @@ const Products = () => {
                       </MenuItem>
                     </Right>
                 </Wrapper>
-                {data.categories.products.map(product => {
+                {filter.products.map(product => {
                   return(
                       <div key={product.id}>
                         <img src={product.gallery[0]} alt={product.name} />

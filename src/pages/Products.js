@@ -80,7 +80,7 @@ const Products = () => {
 
   const {error, data, loading} = useQuery(GET_PRODUCTS);
 
-  const [filter, setFilter] = useState(data.categories);
+  const [filter, setFilter] = useState(data);
 
   console.log({error, data, loading});
 
@@ -95,7 +95,7 @@ const Products = () => {
                 <Wrapper>
                     <Left>
                       <CategoryButton 
-                        onClick={() => setFilter(data.categories)}
+                        onClick={() => filterProducts('all')}
                       >
                         all
                       </CategoryButton>
@@ -123,7 +123,7 @@ const Products = () => {
                       </MenuItem>
                     </Right>
                 </Wrapper>
-                {/* {filter.products.map(product => {
+                {/* {data.categories.products.map(product => {
                   return(
                     <Wrapper>
                       <div key={product.id}>

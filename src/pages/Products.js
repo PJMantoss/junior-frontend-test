@@ -95,19 +95,19 @@ const Products = () => {
                 <Wrapper>
                     <Left>
                       <CategoryButton 
-                        onClick={() => filterProducts()}
+                        onClick={() => setFilter(data.categories)}
                       >
                         all
                       </CategoryButton>
 
                       <CategoryButton 
-                        onClick={() => filterProducts()}
+                        onClick={() => filterProducts('clothes')}
                       >
                         clothes
                       </CategoryButton>
 
                       <CategoryButton 
-                        onClick={() => filterProducts()}
+                        onClick={() => filterProducts('tech')}
                       >
                         tech
                       </CategoryButton>

@@ -61,18 +61,18 @@ const CategoryButton = styled.a`
 
 const GET_PRODUCTS = gql`
   query {
-  categories{
-    name,
-    products{
-        id,
-        name,
-        gallery,
-        prices {
-          currency{symbol},
-          amount
-        }
-  }
-  }
+    categories{
+      name,
+      products{
+          id,
+          name,
+          gallery,
+          prices {
+            currency{symbol},
+            amount
+          }
+      }
+    }
 }
 `;
 

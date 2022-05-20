@@ -74,6 +74,7 @@ const GET_PRODUCTS = gql`
     categories{
       name,
       products{
+          id,
           name,
           gallery,
           prices {
@@ -89,7 +90,7 @@ const Products = () => {
 
   const {error, data, loading} = useQuery(GET_PRODUCTS);
 
-  const [filter, setFilter] = useState(data);
+  const [filter, setFilter] = useState(data.categories);
 
   console.log({error, data, loading});
 
@@ -132,7 +133,7 @@ const Products = () => {
                       </MenuItem>
                     </Right>
                 </Wrapper>
-                {filter.map(product => {
+                {filter.products.map(product => {
                   return(
                       <Card key={product.id}>
                         <ProductImage src={product.gallery[0]} alt={product.name} />

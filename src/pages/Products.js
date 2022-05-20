@@ -152,9 +152,9 @@ const Products = () => {
 
   return (
     <div>
-      {<DisplayProducts/>}
+      {<DisplayProducts />}
     </div>
   )
 }
 
-export default Products
+export default Products;

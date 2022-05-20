@@ -59,6 +59,12 @@ const CategoryButton = styled.a`
   }
 `;
 
+const Card = styled.div``;
+
+const ProductImage = styled.img``;
+
+const PrdouctInfo = styled.div``;
+
 const GET_PRODUCTS = gql`
   query {
     categories{
@@ -123,15 +129,17 @@ const Products = () => {
                       </MenuItem>
                     </Right>
                 </Wrapper>
-                {/* {filter.products.map(product => {
+                {filter.products.map(product => {
                   return(
-                      <div key={product.id}>
+                      <Card key={product.id}>
                         <img src={product.gallery[0]} alt={product.name} />
-                        <h3>{product.name}</h3>
-                        <p>{product.prices[0].currency}{product.prices[0].amount}</p>
-                      </div>
+                        <PrdouctInfo>
+                          <h3>{product.name}</h3>
+                          <p>{product.prices[0].currency}{product.prices[0].amount}</p>
+                        </PrdouctInfo>
+                      </Card>
                   )
-                })} */}
+                })}
             </Container>
         )
     };

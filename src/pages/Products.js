@@ -90,14 +90,14 @@ const Products = () => {
 
   const {error, data, loading} = useQuery(GET_PRODUCTS);
 
-  // const [filter, setFilter] = useState({});
+  const [filter, setFilter] = useState(data);
 
-  console.log({error, data, loading});
+  // console.log({error, data, loading});
 
-  // const filterProducts = (cat) => {
-  //   const updatedList = data.categories.filter(category => category.name === cat);
-  //   setFilter(updatedList);
-  // };
+  const filterProducts = (cat) => {
+    const updatedList = data.categories.filter(category => category.name === cat);
+    setFilter(updatedList);
+  };
 
     const DisplayProducts = () => {
         return(
@@ -105,19 +105,19 @@ const Products = () => {
                 <Wrapper>
                     <Left>
                       <CategoryButton 
-                        // onClick={() => filterProducts('all')}
+                        onClick={() => filterProducts('all')}
                       >
                         all
                       </CategoryButton>
 
                       <CategoryButton 
-                        // onClick={() => filterProducts('clothes')}
+                        onClick={() => filterProducts('clothes')}
                       >
                         clothes
                       </CategoryButton>
 
                       <CategoryButton 
-                        // onClick={() => filterProducts('tech')}
+                        onClick={() => filterProducts('tech')}
                       >
                         tech
                       </CategoryButton>
@@ -133,7 +133,7 @@ const Products = () => {
                       </MenuItem>
                     </Right>
                 </Wrapper>
-                {data.categories.products.map(product => {
+                {data.categories.products?.map(product => {
                   return(
                       <Card key={product.id}>
                         <ProductImage src={product.gallery[0]} alt={product.name} />

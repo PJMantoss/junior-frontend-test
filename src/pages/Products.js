@@ -65,6 +65,10 @@ const ProductImage = styled.img``;
 
 const PrdouctInfo = styled.div``;
 
+const ProductName = styled.h3``;
+
+const ProductPrice = styled.p``;
+
 const GET_PRODUCTS = gql`
   query {
     categories{

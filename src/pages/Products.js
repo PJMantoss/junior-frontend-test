@@ -133,7 +133,7 @@ const Products = () => {
                       </MenuItem>
                     </Right>
                 </Wrapper>
-                {data.categories.products?.map(product => {
+                {data?.categories.products?.map(product => {
                   return(
                       <Card key={product.id}>
                         <ProductImage src={product.gallery[0]} alt={product.name} />

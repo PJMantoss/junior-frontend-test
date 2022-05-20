@@ -74,7 +74,6 @@ const GET_PRODUCTS = gql`
     categories{
       name,
       products{
-          id,
           name,
           gallery,
           prices {

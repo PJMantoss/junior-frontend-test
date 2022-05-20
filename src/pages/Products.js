@@ -70,7 +70,7 @@ const ProductName = styled.h3``;
 const ProductPrice = styled.p``;
 
 const GET_PRODUCTS = gql`
-  query {
+  query GetProducts {
     categories{
       name,
       products{
@@ -90,14 +90,18 @@ const Products = () => {
 
   const {error, data, loading} = useQuery(GET_PRODUCTS);
 
-  const [filter, setFilter] = useState(data);
+  if (loading) return 'Loading...';
+  if (error) return `Error! ${error.message}`;
+
+
+  // const [filter, setFilter] = useState(data);
 
   // console.log({error, data, loading});
 
-  const filterProducts = (cat) => {
-    const updatedList = data.categories.filter(category => category.name === cat);
-    setFilter(updatedList);
-  };
+  // const filterProducts = (cat) => {
+  //   const updatedList = data.categories.filter(category => category.name === cat);
+  //   setFilter(updatedList);
+  // };
 
     const DisplayProducts = () => {
         return(
@@ -105,19 +109,19 @@ const Products = () => {
                 <Wrapper>
                     <Left>
                       <CategoryButton 
-                        onClick={() => filterProducts('all')}
+                        // onClick={() => filterProducts('all')}
                       >
                         all
                       </CategoryButton>
 
                       <CategoryButton 
-                        onClick={() => filterProducts('clothes')}
+                        // onClick={() => filterProducts('clothes')}
                       >
                         clothes
                       </CategoryButton>
 
                       <CategoryButton 
-                        onClick={() => filterProducts('tech')}
+                        // onClick={() => filterProducts('tech')}
                       >
                         tech
                       </CategoryButton>
@@ -133,8 +137,8 @@ const Products = () => {
                       </MenuItem>
                     </Right>
                 </Wrapper>
-                {data?.categories.products?.map(product => {
-                  return(
+                {data?.categories.products?.map((product) => (
+                  
                       <Card key={product.id}>
                         <ProductImage src={product.gallery[0]} alt={product.name} />
                         <PrdouctInfo>
@@ -144,8 +148,8 @@ const Products = () => {
                           </ProductPrice>
                         </PrdouctInfo>
                       </Card>
-                  )
-                })}
+                  
+                ))}
             </Container>
         )
     };

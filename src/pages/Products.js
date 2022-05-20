@@ -132,7 +132,7 @@ const Products = () => {
                 {filter.products.map(product => {
                   return(
                       <Card key={product.id}>
-                        <img src={product.gallery[0]} alt={product.name} />
+                        <ProductImage src={product.gallery[0]} alt={product.name} />
                         <PrdouctInfo>
                           <h3>{product.name}</h3>
                           <p>{product.prices[0].currency}{product.prices[0].amount}</p>

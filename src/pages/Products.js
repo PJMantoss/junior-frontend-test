@@ -89,7 +89,7 @@ const Products = () => {
 
   const {error, data, loading} = useQuery(GET_PRODUCTS);
 
-  const [filter, setFilter] = useState(data.categories);
+  const [filter, setFilter] = useState(data);
 
   console.log({error, data, loading});
 
@@ -132,7 +132,7 @@ const Products = () => {
                       </MenuItem>
                     </Right>
                 </Wrapper>
-                {filter.products.map(product => {
+                {filter.map(product => {
                   return(
                       <Card key={product.id}>
                         <ProductImage src={product.gallery[0]} alt={product.name} />

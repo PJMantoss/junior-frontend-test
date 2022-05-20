@@ -138,7 +138,7 @@ const Products = () => {
                       <Card key={product.id}>
                         <ProductImage src={product.gallery[0]} alt={product.name} />
                         <PrdouctInfo>
-                          <h3>{product.name}</h3>
+                          <ProductName>{product.name}</ProductName>
                           <p>{product.prices[0].currency}{product.prices[0].amount}</p>
                         </PrdouctInfo>
                       </Card>

@@ -90,14 +90,14 @@ const Products = () => {
 
   const {error, data, loading} = useQuery(GET_PRODUCTS);
 
-  const [filter, setFilter] = useState({});
+  // const [filter, setFilter] = useState({});
 
   console.log({error, data, loading});
 
-  const filterProducts = (cat) => {
-    const updatedList = data.categories.filter(category => category.name === cat);
-    setFilter(updatedList);
-  };
+  // const filterProducts = (cat) => {
+  //   const updatedList = data.categories.filter(category => category.name === cat);
+  //   setFilter(updatedList);
+  // };
 
     const DisplayProducts = () => {
         return(
@@ -105,19 +105,19 @@ const Products = () => {
                 <Wrapper>
                     <Left>
                       <CategoryButton 
-                        onClick={() => filterProducts('all')}
+                        // onClick={() => filterProducts('all')}
                       >
                         all
                       </CategoryButton>
 
                       <CategoryButton 
-                        onClick={() => filterProducts('clothes')}
+                        // onClick={() => filterProducts('clothes')}
                       >
                         clothes
                       </CategoryButton>
 
                       <CategoryButton 
-                        onClick={() => filterProducts('tech')}
+                        // onClick={() => filterProducts('tech')}
                       >
                         tech
                       </CategoryButton>
@@ -133,12 +133,12 @@ const Products = () => {
                       </MenuItem>
                     </Right>
                 </Wrapper>
-                {Object.entries(data).map(([key, product]) => {
+                {data.categories.products.map(product => {
                   return(
-                      <Card key={data[product].id}>
-                        <ProductImage src={data[product].gallery[0]} alt={product.name} />
+                      <Card key={product.id}>
+                        <ProductImage src={product.gallery[0]} alt={product.name} />
                         <PrdouctInfo>
-                          <ProductName>{data[product].name}</ProductName>
+                          <ProductName>{product.name}</ProductName>
                           <ProductPrice>
                             {product.prices[0].currency}{product.prices[0].amount}
                           </ProductPrice>

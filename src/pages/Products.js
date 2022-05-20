@@ -138,17 +138,15 @@ const Products = () => {
                     </Right>
                 </Wrapper>
                 {data?.categories.products?.map((product) => (
-                  
-                      <Card key={product.id}>
-                        <ProductImage src={product.gallery[0]} alt={product.name} />
-                        <PrdouctInfo>
-                          <ProductName>{product.name}</ProductName>
-                          <ProductPrice>
-                            {product.prices[0].currency}{product.prices[0].amount}
-                          </ProductPrice>
-                        </PrdouctInfo>
-                      </Card>
-                  
+                  <Card key={product.id}>
+                    <ProductImage src={product.gallery[0]} alt={product.name} />
+                    <PrdouctInfo>
+                      <ProductName>{product.name}</ProductName>
+                      <ProductPrice>
+                        {product.prices[0].currency}{product.prices[0].amount}
+                      </ProductPrice>
+                    </PrdouctInfo>
+                  </Card>
                 ))}
             </Container>
         )

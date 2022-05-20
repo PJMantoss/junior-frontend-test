@@ -133,12 +133,12 @@ const Products = () => {
                       </MenuItem>
                     </Right>
                 </Wrapper>
-                {data.categories.products.map(product => {
+                {Object.entries(data).map(([key, product]) => {
                   return(
-                      <Card key={product.id}>
-                        <ProductImage src={product.gallery[0]} alt={product.name} />
+                      <Card key={data[product].id}>
+                        <ProductImage src={data[product].gallery[0]} alt={product.name} />
                         <PrdouctInfo>
-                          <ProductName>{product.name}</ProductName>
+                          <ProductName>{data[product].name}</ProductName>
                           <ProductPrice>
                             {product.prices[0].currency}{product.prices[0].amount}
                           </ProductPrice>

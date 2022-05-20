@@ -90,7 +90,7 @@ const Products = () => {
 
   const {error, data, loading} = useQuery(GET_PRODUCTS);
 
-  const [filter, setFilter] = useState(data.categories);
+  const [filter, setFilter] = useState({});
 
   console.log({error, data, loading});
 

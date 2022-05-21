@@ -101,7 +101,10 @@ const Products = () => {
   // if (error) return `Error! ${error.message}`;
 
   useEffect(() => {
-    fetch('', {});
+    fetch("http://localhost:4000/", {
+      method: "POST",
+      headers: {"":""}
+    });
   }, []);
 
 

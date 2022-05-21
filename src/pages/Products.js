@@ -105,7 +105,8 @@ const Products = () => {
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({ query: GET_PRODUCTS })
-    });
+    }).then(res => res.json())
+    .then(data => console.log(data))
   }, []);
 
 

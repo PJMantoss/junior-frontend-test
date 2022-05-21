@@ -100,13 +100,15 @@ const Products = () => {
   // if (loading) return 'Loading...';
   // if (error) return `Error! ${error.message}`;
 
+  const [goods, setGoods] = useState([]);
+
   useEffect(() => {
     fetch("http://localhost:4000/", {
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({ query: GET_PRODUCTS })
     }).then(res => res.json())
-    .then(data => console.log(data))
+    .then(data => setGoods(data))
   }, []);
 
 
@@ -153,7 +155,7 @@ const Products = () => {
                       </MenuItem>
                     </Right>
                 </Wrapper>
-                {data?.categories.products?.map((product) => (
+                {/* {data?.categories.products?.map((product) => (
                   <Card key={product.id}>
                     <ProductImage src={product.gallery[0]} alt={product.name} />
                     <PrdouctInfo>
@@ -163,7 +165,7 @@ const Products = () => {
                       </ProductPrice>
                     </PrdouctInfo>
                   </Card>
-                ))}
+                ))} */}
             </Container>
         )
     };

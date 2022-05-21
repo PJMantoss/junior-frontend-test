@@ -70,19 +70,21 @@ const ProductName = styled.h3``;
 const ProductPrice = styled.p``;
 
 const GET_PRODUCTS = gql`
-  query GetProducts {
-    categories{
-      name,
-      products{
-          id,
-          name,
-          gallery,
-          prices {
-            currency{symbol},
-            amount
-          }
+  query {
+  categories {
+    name
+    products {
+      id
+      name
+      gallery
+      prices {
+        currency {
+          symbol
+        }
+        amount
       }
     }
+  }
 }
 `;
 

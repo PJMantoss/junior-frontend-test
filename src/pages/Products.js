@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { useQuery, gql } from '@apollo/client';
+// import { useQuery, gql } from '@apollo/client';
 
 const Container = styled.div``;
 
@@ -74,7 +74,7 @@ const ProductName = styled.h3``;
 
 const ProductPrice = styled.p``;
 
-const GET_PRODUCTS = gql`
+const GET_PRODUCTS = `
   query {
   categories {
     name
@@ -95,10 +95,10 @@ const GET_PRODUCTS = gql`
 
 const Products = () => {
 
-  const {error, data, loading} = useQuery(GET_PRODUCTS);
+  // const {error, data, loading} = useQuery(GET_PRODUCTS);
 
-  if (loading) return 'Loading...';
-  if (error) return `Error! ${error.message}`;
+  // if (loading) return 'Loading...';
+  // if (error) return `Error! ${error.message}`;
 
   useEffect(() => {
     fetch('', {});

@@ -144,12 +144,14 @@ const Products = () => {
                       </MenuItem>
                     </Right>
                 </Wrapper>
-                {data?.categories.name?.map((name) => (
-                  <Card>
-                    
+                {data?.categories.products?.map((product) => (
+                  <Card key={product.id}>
+                    <ProductImage src={product.gallery[0]} alt={product.name} />
                     <PrdouctInfo>
-                      <ProductName>{name}</ProductName>
-                      
+                      <ProductName>{product.name}</ProductName>
+                      <ProductPrice>
+                        {product.prices[0].currency}{product.prices[0].amount}
+                      </ProductPrice>
                     </PrdouctInfo>
                   </Card>
                 ))}

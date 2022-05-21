@@ -75,20 +75,20 @@ const ProductName = styled.h3``;
 const ProductPrice = styled.p``;
 
 const GET_PRODUCTS = `
-  query {
-  categories {
-    name
-    products {
-      id
+  {
+    categories {
       name
-      gallery
-      prices {
-        currency {
-          symbol
+      products {
+        id
+        name
+        gallery
+        prices {
+          currency {
+            symbol
+          }
+          amount
         }
-        amount
       }
-    }
   }
 }
 `;
@@ -103,7 +103,8 @@ const Products = () => {
   useEffect(() => {
     fetch("http://localhost:4000/", {
       method: "POST",
-      headers: {"Content-Type": "application/json"}
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({ query:  })
     });
   }, []);
 

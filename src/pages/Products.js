@@ -100,7 +100,9 @@ const Products = () => {
   if (loading) return 'Loading...';
   if (error) return `Error! ${error.message}`;
 
-  useEffect();
+  useEffect(() => {
+    fetch('', {});
+  }, []);
 
 
   // const [filter, setFilter] = useState(data);

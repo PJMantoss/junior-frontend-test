@@ -100,7 +100,7 @@ const Products = () => {
   // if (loading) return 'Loading...';
   // if (error) return `Error! ${error.message}`;
 
-  const [allProducts, setProducts] = useState([]);
+  const [allProducts, setAllProducts] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:4000/", {

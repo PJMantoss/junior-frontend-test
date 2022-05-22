@@ -108,7 +108,7 @@ const Products = () => {
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({ query: GET_PRODUCTS })
     }).then(res => res.json())
-    .then(data => setAllProducts(data.data.categories.products))
+    .then(data => console.log(data.data.categories))
   }, []);
 
 
@@ -155,7 +155,7 @@ const Products = () => {
                       </MenuItem>
                     </Right>
                 </Wrapper>
-                {JSON.stringify(allProducts, null, 2)}
+                {/* {JSON.stringify(allProducts, null, 2)} */}
                 {/* {data?.categories.products?.map((product) => (
                   <Card key={product.id}>
                     <ProductImage src={product.gallery[0]} alt={product.name} />

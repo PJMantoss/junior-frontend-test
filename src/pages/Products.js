@@ -100,7 +100,7 @@ const Products = () => {
   // if (loading) return 'Loading...';
   // if (error) return `Error! ${error.message}`;
 
-  const [products, setProducts] = useState([]);
+  const [allProducts, setProducts] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:4000/", {
@@ -108,7 +108,7 @@ const Products = () => {
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({ query: GET_PRODUCTS })
     }).then(res => res.json())
-    .then(data => setProducts(data.categories.name))
+    .then(data => setProducts(data.categories.products))
   }, []);
 
 

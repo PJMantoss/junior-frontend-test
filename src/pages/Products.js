@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-// import { useQuery, gql } from '@apollo/client';
+import { useQuery, gql } from '@apollo/client';
 
 const Container = styled.div``;
 
@@ -74,8 +74,8 @@ const ProductName = styled.h3``;
 
 const ProductPrice = styled.p``;
 
-const GET_PRODUCTS = `
-  {
+const GET_PRODUCTS = gql`
+  query {
     categories {
       name
       products {
@@ -100,7 +100,7 @@ const Products = () => {
   if (loading) return 'Loading...';
   if (error) return `Error! ${error.message}`;
 
-  const [allProducts, setAllProducts] = useState([]);
+  // const [allProducts, setAllProducts] = useState([]);
 
   // useEffect(() => {
   //   fetch("http://localhost:4000/", {
@@ -112,7 +112,7 @@ const Products = () => {
   // }, []);
 
 
-  const [filter, setFilter] = useState(data);
+  // const [filter, setFilter] = useState(data);
 
   // console.log({error, data, loading});
 
@@ -156,7 +156,7 @@ const Products = () => {
                     </Right>
                 </Wrapper>
                 {/* {JSON.stringify(allProducts, null, 2)} */}
-                {data?.categories.products?.map((product) => (
+                {data.data.categories.products.map((product) => (
                   <Card key={product.id}>
                     <ProductImage src={product.gallery[0]} alt={product.name} />
                     <PrdouctInfo>

@@ -157,12 +157,12 @@ const Products = () => {
                 </Wrapper>
                 {/* {JSON.stringify(allProducts, null, 2)} */}
                 {allProducts.map((category) => (
-                  <Card key={category.products.id}>
-                    <ProductImage src={category.products.gallery[0]} alt={category.products.name} />
+                  <Card key={category.id}>
+                    <ProductImage src={category.products.gallery} alt={category.products.name} />
                     <PrdouctInfo>
                       <ProductName>{category.products.name}</ProductName>
                       <ProductPrice>
-                        {category.products.prices[0].currency}{category.products.prices[0].amount}
+                        {category.products.prices}
                       </ProductPrice>
                     </PrdouctInfo>
                   </Card>
@@ -173,7 +173,7 @@ const Products = () => {
 
   return (
     <div>
-      {<DisplayProducts />}
+      <DisplayProducts />
     </div>
   )
 }

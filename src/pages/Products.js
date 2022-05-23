@@ -95,21 +95,21 @@ const GET_PRODUCTS = `
 
 const Products = () => {
 
-  // const {error, data, loading} = useQuery(GET_PRODUCTS);
+  const {error, data, loading} = useQuery(GET_PRODUCTS);
 
-  // if (loading) return 'Loading...';
-  // if (error) return `Error! ${error.message}`;
+  if (loading) return 'Loading...';
+  if (error) return `Error! ${error.message}`;
 
   const [allProducts, setAllProducts] = useState([]);
 
-  useEffect(() => {
-    fetch("http://localhost:4000/", {
-      method: "POST",
-      headers: {"Content-Type": "application/json"},
-      body: JSON.stringify({ query: GET_PRODUCTS })
-    }).then(res => res.json())
-    .then(data => console.log(data.data.categories))
-  }, []);
+  // useEffect(() => {
+  //   fetch("http://localhost:4000/", {
+  //     method: "POST",
+  //     headers: {"Content-Type": "application/json"},
+  //     body: JSON.stringify({ query: GET_PRODUCTS })
+  //   }).then(res => res.json())
+  //   .then(data => console.log(data.data.categories))
+  // }, []);
 
 
   const [filter, setFilter] = useState(data);

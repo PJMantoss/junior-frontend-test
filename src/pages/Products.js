@@ -121,60 +121,52 @@ const Products = () => {
   //   setFilter(updatedList);
   // };
 
-    const DisplayProducts = () => {
-        return(
-          <Container>
-                <Wrapper>
-                    <Left>
-                      <CategoryButton 
-                        // onClick={() => filterProducts('all')}
-                      >
-                        all
-                      </CategoryButton>
-
-                      <CategoryButton 
-                        // onClick={() => filterProducts('clothes')}
-                      >
-                        clothes
-                      </CategoryButton>
-
-                      <CategoryButton 
-                        // onClick={() => filterProducts('tech')}
-                      >
-                        tech
-                      </CategoryButton>
-                    </Left>
-
-                    <Center>
-                      <Logo src={'./assets/logo.png'} />
-                    </Center>
-
-                    <Right>
-                      <MenuItem>
-                        Cart(0)
-                      </MenuItem>
-                    </Right>
-                </Wrapper>
-                {/* {JSON.stringify(allProducts, null, 2)} */}
-                {allProducts.map((category) => (
-                  <Card key={category.id}>
-                    <ProductImage src={category.products.gallery} alt={category.products.name} />
-                    <PrdouctInfo>
-                      <ProductName>{category.products.name}</ProductName>
-                      <ProductPrice>
-                        {category.products.prices}
-                      </ProductPrice>
-                    </PrdouctInfo>
-                  </Card>
-                ))}
-            </Container>
-        )
-    };
-
   return (
-    <div>
-      <DisplayProducts />
-    </div>
+      <Container>
+        <Wrapper>
+            <Left>
+              <CategoryButton 
+                // onClick={() => filterProducts('all')}
+              >
+                all
+              </CategoryButton>
+
+              <CategoryButton 
+                // onClick={() => filterProducts('clothes')}
+              >
+                clothes
+              </CategoryButton>
+
+              <CategoryButton 
+                // onClick={() => filterProducts('tech')}
+              >
+                tech
+              </CategoryButton>
+            </Left>
+
+            <Center>
+              <Logo src={'./assets/logo.png'} />
+            </Center>
+
+            <Right>
+              <MenuItem>
+                Cart(0)
+              </MenuItem>
+            </Right>
+        </Wrapper>
+        {/* {JSON.stringify(allProducts, null, 2)} */}
+        {allProducts.map((category) => {
+          return(<Card key={category.id}>
+            <ProductImage src={category.products.gallery} alt={category.products.name} />
+            <PrdouctInfo>
+              <ProductName>{category.products.name}</ProductName>
+              <ProductPrice>
+                {category.products.prices}
+              </ProductPrice>
+            </PrdouctInfo>
+          </Card>)
+        })}
+  </Container>
   )
 }
 

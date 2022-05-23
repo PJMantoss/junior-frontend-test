@@ -112,7 +112,7 @@ const Products = () => {
   }, []);
 
 
-  // const [filter, setFilter] = useState(data);
+  const [filter, setFilter] = useState(data);
 
   // console.log({error, data, loading});
 

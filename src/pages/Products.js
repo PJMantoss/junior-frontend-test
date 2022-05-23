@@ -75,7 +75,7 @@ const ProductName = styled.h3``;
 const ProductPrice = styled.p``;
 
 const GET_PRODUCTS = `
-  query {
+  {
     categories {
       name
       products {

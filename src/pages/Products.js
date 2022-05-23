@@ -122,6 +122,7 @@ const Products = () => {
   // };
 
   return (
+    <>
       <Container>
         <Wrapper>
             <Left>
@@ -154,8 +155,10 @@ const Products = () => {
               </MenuItem>
             </Right>
         </Wrapper>
-        {/* {JSON.stringify(allProducts, null, 2)} */}
-        {allProducts.map((category) => {
+      </Container>
+      <Container>
+      {/* {JSON.stringify(allProducts, null, 2)} */}
+      {allProducts.map((category) => {
           return(<Card key={category.id}>
             <ProductImage src={category.products.gallery} alt={category.products.name} />
             <PrdouctInfo>
@@ -166,7 +169,8 @@ const Products = () => {
             </PrdouctInfo>
           </Card>)
         })}
-  </Container>
+        </Container>
+    </>
   )
 }
 

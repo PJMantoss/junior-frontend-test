@@ -74,7 +74,7 @@ const ProductName = styled.h3``;
 
 const ProductPrice = styled.p``;
 
-const GET_PRODUCTS = gql`
+const GET_PRODUCTS = `
   query {
     categories {
       name
@@ -108,7 +108,7 @@ const Products = () => {
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({ query: GET_PRODUCTS })
     }).then(res => res.json())
-    .then(data => console.log(data))
+    .then(data => setAllProducts(data.data.categories))
   }, []);
 
 

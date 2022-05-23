@@ -155,8 +155,8 @@ const Products = () => {
                       </MenuItem>
                     </Right>
                 </Wrapper>
-                {JSON.stringify(allProducts, null, 2)}
-                {/* {data.data.map((product) => (
+                {/* {JSON.stringify(allProducts, null, 2)} */}
+                {/* {allProducts.categories.map((product) => (
                   <Card key={product.id}>
                     <ProductImage src={product.gallery[0]} alt={product.name} />
                     <PrdouctInfo>

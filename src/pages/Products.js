@@ -159,13 +159,13 @@ const Products = () => {
         </Wrapper>
         {/* {JSON.stringify(allProducts, null, 2)} */}
         <Card>
-        {allProducts.map((category) => (
-            <ProductItem key={category.products.id}>
-              <ProductImage src={category.products.gallery} alt={category.products.name} />
+        {allProducts.map(product => (
+            <ProductItem key={product.id}>
+              <ProductImage src={product.gallery} alt={product.name} />
               <PrdouctInfo>
-                <ProductName>{category.products.name}</ProductName>
+                <ProductName>{product.name}</ProductName>
                 <ProductPrice>
-                  {category.products.prices}
+                  {product.prices}
                 </ProductPrice>
               </PrdouctInfo>
             </ProductItem>)

@@ -1,10 +1,10 @@
-import Products from './pages/Products';
+import TechProducts from './pages/TechProducts';
 import './App.css';
 
 function App() {
   return (
     <div>
-      <Products />
+      <TechProducts />
     </div>
   );
 }

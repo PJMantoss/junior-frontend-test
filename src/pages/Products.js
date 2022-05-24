@@ -59,11 +59,14 @@ const CategoryButton = styled.a`
   }
 `;
 
-const Card = styled.div`
+const Card = styled.ul`
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  z-index: 1000;
+`;
+
+const ProductItem = styled.li`
+// list-style: none;
 `;
 
 const ProductImage = styled.img``;
@@ -158,16 +161,16 @@ const Products = () => {
       </Container>
       <Container>
       {/* {JSON.stringify(allProducts, null, 2)} */}
-      {allProducts.map((category) => 
-          <Card>
+      {allProducts.map((category) => (
+          <Card key={category.products.id}>
             <ProductImage src={category.products.gallery} alt={category.products.name} />
-            <PrdouctInfo key={category.products.id}>
+            <PrdouctInfo>
               <ProductName>{category.products.name}</ProductName>
               <ProductPrice>
                 {category.products.prices}
               </ProductPrice>
             </PrdouctInfo>
-          </Card>
+          </Card>)
         )}
       </Container>
     </>

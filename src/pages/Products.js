@@ -73,6 +73,8 @@ const ProductImage = styled.img``;
 
 const PrdouctInfo = styled.div``;
 
+const CategoryName = styled.h4``;
+
 const ProductName = styled.h3``;
 
 const ProductPrice = styled.p``;
@@ -96,6 +98,18 @@ const GET_PRODUCTS = `
 }
 `;
 
+const GET_PRODUCT = `
+  {
+    category {
+      products {
+        id
+        name
+        gallery
+      }
+    }
+  }
+`;
+
 const Products = () => {
 
   // const {error, data, loading} = useQuery(GET_PRODUCTS);
@@ -103,15 +117,26 @@ const Products = () => {
   // if (loading) return 'Loading...';
   // if (error) return `Error! ${error.message}`;
 
-  const [allProducts, setAllProducts] = useState([]);
+  // const [allProducts, setAllProducts] = useState([]);
+
+  const [singleProduct, setSingleProduct] = useState([]);
+
+  // useEffect(() => {
+  //   fetch("http://localhost:4000/", {
+  //     method: "POST",
+  //     headers: {"Content-Type": "application/json"},
+  //     body: JSON.stringify({ query: GET_PRODUCTS })
+  //   }).then(res => res.json())
+  //   .then(data => setAllProducts(data.data.categories))
+  // }, []);
 
   useEffect(() => {
     fetch("http://localhost:4000/", {
       method: "POST",
       headers: {"Content-Type": "application/json"},
-      body: JSON.stringify({ query: GET_PRODUCTS })
+      body: JSON.stringify({ query: GET_PRODUCT })
     }).then(res => res.json())
-    .then(data => setAllProducts(data.data.categories))
+    .then(data => console.log(data.data.category))
   }, []);
 
 
@@ -159,17 +184,18 @@ const Products = () => {
         </Wrapper>
         {/* {JSON.stringify(allProducts, null, 2)} */}
         <Card>
-        {allProducts.map(product => (
-            <ProductItem key={product.id}>
-              <ProductImage src={product.gallery} alt={product.name} />
+        {/* {singleProduct.map(product => (
+            <ProductItem key={product.products.id}>
+              {/* <ProductImage src={product.gallery} alt={product.name} /> */}
               <PrdouctInfo>
-                <ProductName>{product.name}</ProductName>
-                <ProductPrice>
+                {/* <CategoryName>{product.products.name}</CategoryName> */}
+                <ProductName>{product.products.name}</ProductName>
+                {/* <ProductPrice>
                   {product.prices}
-                </ProductPrice>
+                </ProductPrice> */}
               </PrdouctInfo>
             </ProductItem>)
-          )}
+          )} */}
           </Card>
       </Container>
   )

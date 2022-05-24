@@ -66,7 +66,7 @@ const Card = styled.ul`
 `;
 
 const ProductItem = styled.li`
-// list-style: none;
+  list-style: none;
 `;
 
 const ProductImage = styled.img``;

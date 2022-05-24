@@ -164,7 +164,7 @@ const Products = () => {
               {/* <ProductImage src={product.gallery} alt={product.name} /> */}
               <PrdouctInfo>
                 {/* <CategoryName>{product.products.name}</CategoryName> */}
-                <ProductName>{value.name}</ProductName>
+                <ProductName>{value[0].name}</ProductName>
                 {/* <ProductPrice>
                   {product.prices}
                 </ProductPrice> */}

@@ -112,10 +112,6 @@ const GET_PRODUCT = `
 
 const Products = () => {
 
-  // const {error, data, loading} = useQuery(GET_PRODUCTS);
-
-  // if (loading) return 'Loading...';
-  // if (error) return `Error! ${error.message}`;
 
   // const [allProducts, setAllProducts] = useState([]);
 

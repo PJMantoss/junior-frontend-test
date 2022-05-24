@@ -162,14 +162,16 @@ const Products = () => {
       <Container>
       {/* {JSON.stringify(allProducts, null, 2)} */}
       {allProducts.map((category) => (
-          <Card key={category.products.id}>
-            <ProductImage src={category.products.gallery} alt={category.products.name} />
-            <PrdouctInfo>
-              <ProductName>{category.products.name}</ProductName>
-              <ProductPrice>
-                {category.products.prices}
-              </ProductPrice>
-            </PrdouctInfo>
+          <Card>
+            <ProductItem key={category.products.id}>
+              <ProductImage src={category.products.gallery} alt={category.products.name} />
+              <PrdouctInfo>
+                <ProductName>{category.products.name}</ProductName>
+                <ProductPrice>
+                  {category.products.prices}
+                </ProductPrice>
+              </PrdouctInfo>
+            </ProductItem>
           </Card>)
         )}
       </Container>

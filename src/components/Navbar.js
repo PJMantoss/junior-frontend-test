@@ -93,20 +93,38 @@ const CategoryName = styled.h4``;
 const Navbar = () => {
   return (
     <Container>
-      <Wrapper>
-        <Left>
-          Left
-        </Left>
-        <Center>
-          <Logo src={'./assets/logo.png'} />
-        </Center>
-        <Right>
-          <MenuItem>
-            Cart(0)
-          </MenuItem>
-        </Right>
-      </Wrapper>
-    </Container>
+        <Wrapper>
+            <Left>
+              <CategoryButton 
+                // onClick={() => filterProducts('all')}
+              >
+                all
+              </CategoryButton>
+
+              <CategoryButton 
+                // onClick={() => filterProducts('clothes')}
+              >
+                clothes
+              </CategoryButton>
+
+              <CategoryButton 
+                // onClick={() => filterProducts('tech')}
+              >
+                tech
+              </CategoryButton>
+            </Left>
+
+            <Center>
+              <Logo src={'./assets/logo.png'} />
+            </Center>
+
+            <Right>
+              <MenuItem>
+                Cart(0)
+              </MenuItem>
+            </Right>
+        </Wrapper>
+      </Container>
   )
 }
 

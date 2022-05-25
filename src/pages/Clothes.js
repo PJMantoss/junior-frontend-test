@@ -97,4 +97,4 @@ const Clothes = () => {
   )
 }
 
-export default Products;
+export default Clothes;

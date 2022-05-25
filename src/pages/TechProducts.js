@@ -130,7 +130,7 @@ const Products = () => {
         <Card>
         {Object.values(TechProduct)[1].map((value, index) => (
             <ProductItem key={index}>
-              {/* <ProductImage src={product.gallery} alt={product.name} /> */}
+              <ProductImage src={value.gallery} alt={value.name} />
               <PrdouctInfo>
                 {/* <CategoryName>{product.products.name}</CategoryName> */}
                 <ProductName>{value.name}</ProductName>

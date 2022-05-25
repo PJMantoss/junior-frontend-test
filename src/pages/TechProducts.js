@@ -126,37 +126,6 @@ const Products = () => {
 
   return (
       <Container>
-        <Wrapper>
-            <Left>
-              <CategoryButton 
-                // onClick={() => filterProducts('all')}
-              >
-                all
-              </CategoryButton>
-
-              <CategoryButton 
-                // onClick={() => filterProducts('clothes')}
-              >
-                clothes
-              </CategoryButton>
-
-              <CategoryButton 
-                // onClick={() => filterProducts('tech')}
-              >
-                tech
-              </CategoryButton>
-            </Left>
-
-            <Center>
-              <Logo src={'./assets/logo.png'} />
-            </Center>
-
-            <Right>
-              <MenuItem>
-                Cart(0)
-              </MenuItem>
-            </Right>
-        </Wrapper>
         {/* {JSON.stringify(allProducts, null, 2)} */}
         <Card>
         {Object.values(TechProduct)[1].map((value, index) => (

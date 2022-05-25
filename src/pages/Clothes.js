@@ -80,18 +80,18 @@ const Clothes = () => {
       <Container>
         {/* {JSON.stringify(allProducts, null, 2)} */}
         <Card>
-        {Object.values(clothes)[1].map((value, index) => (
+        {/* {Object.values(clothes)[1].map((value, index) => (
             <ProductItem key={index}>
-              {/* <ProductImage src={value.gallery} alt={value.name} /> */}
+              <ProductImage src={value.gallery} alt={value.name} />
               <PrdouctInfo>
-                {/* <CategoryName>{product.products.name}</CategoryName> */}
-                {/* <ProductName>{value.name}</ProductName> */}
-                {/* <ProductPrice>
+                <CategoryName>{product.products.name}</CategoryName> 
+                <ProductName>{value.name}</ProductName>
+                <ProductPrice>
                   {product.prices}
-                </ProductPrice> */}
+                </ProductPrice>
               </PrdouctInfo>
             </ProductItem>)
-          )}
+          )} */}
           </Card>
       </Container>
   )

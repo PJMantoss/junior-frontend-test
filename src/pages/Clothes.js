@@ -82,7 +82,7 @@ const Clothes = () => {
         <Card>
         {Object.values(clothes)[1].map((value, index) => (
             <ProductItem key={index}>
-              <ProductImage src={value.gallery} alt={value.name} />
+              {/* <ProductImage src={value.gallery} alt={value.name} /> */}
               <PrdouctInfo>
                 {/* <CategoryName>{product.products.name}</CategoryName> */}
                 <ProductName>{value.name}</ProductName>

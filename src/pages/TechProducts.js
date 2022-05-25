@@ -111,7 +111,7 @@ const Products = () => {
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({ query: GET_PRODUCTS })
     }).then(res => res.json())
-    .then(data => console.log(Object.values(data.data.categories[2])));
+    .then(data => setTechProduct(data.data.categories[2]));
   }, []);
 
 

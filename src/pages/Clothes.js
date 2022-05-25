@@ -63,7 +63,7 @@ const Clothes = () => {
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({ query: GET_PRODUCTS })
     }).then(res => res.json())
-    .then(data => setTechProduct(data.data.categories[2]));
+    .then(data => setClothes(data.data.categories[1]));
   }, []);
 
 
@@ -80,7 +80,7 @@ const Clothes = () => {
       <Container>
         {/* {JSON.stringify(allProducts, null, 2)} */}
         <Card>
-        {Object.values(TechProduct)[1].map((value, index) => (
+        {Object.values(clothes)[1].map((value, index) => (
             <ProductItem key={index}>
               <ProductImage src={value.gallery} alt={value.name} />
               <PrdouctInfo>

@@ -111,7 +111,7 @@ const Products = () => {
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({ query: GET_PRODUCTS })
     }).then(res => res.json())
-    .then(data => setTechProduct(data.data.categories[2]))
+    .then(data => setTechProduct(data.data.categories[2]));
   }, []);
 
 
@@ -164,7 +164,7 @@ const Products = () => {
               {/* <ProductImage src={product.gallery} alt={product.name} /> */}
               <PrdouctInfo>
                 {/* <CategoryName>{product.products.name}</CategoryName> */}
-                <ProductName>{value[0].name}</ProductName>
+                <ProductName>{value[index].name}</ProductName>
                 {/* <ProductPrice>
                   {product.prices}
                 </ProductPrice> */}

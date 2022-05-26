@@ -20,7 +20,9 @@ const Product = ({product}) => {
     <Container>
         <ProductImage src={product.gallery} alt={product.name} />
         <PrdouctInfo>
-            <Icon></Icon>
+            <Icon>
+                <ShoppingCartOutlinedIcon />
+            </Icon>
             <ProductName>{product.name}</ProductName>
             <ProductPrice>
                 {product.prices}

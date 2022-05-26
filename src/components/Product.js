@@ -2,7 +2,10 @@ import React from 'react';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import styled from 'styled-components';
 
-const Container = styled.div``;
+const Container = styled.div`
+    flex: 1;
+    margin: 5px;
+`;
 
 const ProductImage = styled.img``;
 

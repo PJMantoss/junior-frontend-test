@@ -25,7 +25,7 @@ const ProductName = styled.h3``;
 const ProductPrice = styled.p``;
 
 
-const Product = ({item}) => {
+const Product = ({product}) => {
   return (
     <Container>
         <ProductItem key={product.id}>

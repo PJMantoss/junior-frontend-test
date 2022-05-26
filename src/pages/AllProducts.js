@@ -28,7 +28,7 @@ const Products = () => {
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({ query: GET_PRODUCT })
     }).then(res => res.json())
-    .then(data => console.log(data.data.category.products))
+    .then(data => setAllProducts(data.data.category.products))
   }, []);
 
   return (

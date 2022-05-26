@@ -25,25 +25,6 @@ const ProductName = styled.h3``;
 
 const ProductPrice = styled.p``;
 
-const GET_PRODUCTS = `
-  {
-    categories {
-      name
-      products {
-        id
-        name
-        gallery
-        prices {
-          currency {
-            symbol
-          }
-          amount
-        }
-      }
-  }
-}
-`;
-
 const GET_PRODUCT = `
   {
     category {

@@ -4,10 +4,6 @@ import styled from 'styled-components';
 
 const Container = styled.div``;
 
-const ProductItem = styled.li`
-  list-style: none;
-`;
-
 const ProductImage = styled.img``;
 
 const PrdouctInfo = styled.div``;
@@ -22,16 +18,13 @@ const ProductPrice = styled.p``;
 const Product = ({product}) => {
   return (
     <Container>
-        <ProductItem>
-            {/* <ProductImage src={product.gallery} alt={product.name} /> */}
-            <PrdouctInfo>
-            {/* <CategoryName>{product.products.name}</CategoryName> */}
+        <ProductImage src={product.gallery} alt={product.name} />
+        <PrdouctInfo>
             <ProductName>{product.name}</ProductName>
-            {/* <ProductPrice>
+            <ProductPrice>
                 {product.prices}
-            </ProductPrice> */}
-            </PrdouctInfo>
-        </ProductItem>
+            </ProductPrice>
+        </PrdouctInfo>
     </Container>
   )
 }

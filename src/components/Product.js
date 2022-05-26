@@ -26,7 +26,18 @@ const ProductPrice = styled.p``;
 
 const Product = ({item}) => {
   return (
-    <Container>Product</Container>
+    <Container>
+        <ProductItem key={product.id}>
+            {/* <ProductImage src={product.gallery} alt={product.name} /> */}
+            <PrdouctInfo>
+            {/* <CategoryName>{product.products.name}</CategoryName> */}
+            <ProductName>{product.name}</ProductName>
+            {/* <ProductPrice>
+                {product.prices}
+            </ProductPrice> */}
+            </PrdouctInfo>
+        </ProductItem>
+    </Container>
   )
 }
 

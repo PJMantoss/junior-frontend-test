@@ -1,4 +1,5 @@
 import React from 'react';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import styled from 'styled-components';
 
 const Container = styled.div``;

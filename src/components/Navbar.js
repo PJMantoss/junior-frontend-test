@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import Badge from '@mui/material/Badge';
 // import { NavLink } from 'react-router-dom';
 
 const Container = styled.div``;
@@ -105,7 +106,9 @@ const Navbar = () => {
 
             <Right>
               <MenuItem>
-                Cart(0)
+                <Badge badgeContent={4} color="primary">
+                  <MailIcon color="action" />
+                </Badge>
               </MenuItem>
             </Right>
         </Wrapper>

@@ -3,7 +3,10 @@ import Product from '../components/Product';
 import styled from 'styled-components';
 // import { useQuery, gql } from '@apollo/client';
 
-const Container = styled.div``;
+const Container = styled.div`
+  display: flex;
+  padding: 20px;
+`;
 
 const GET_PRODUCT = `
   {

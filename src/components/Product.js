@@ -5,9 +5,13 @@ import styled from 'styled-components';
 const Container = styled.div`
     flex: 1;
     margin: 5px;
+    min-width: 280px;
+    height: 350px;
 `;
 
-const ProductImage = styled.img``;
+const ProductImage = styled.img`
+    height: 80%;
+`;
 
 const PrdouctInfo = styled.div``;
 

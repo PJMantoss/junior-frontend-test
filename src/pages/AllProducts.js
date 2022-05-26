@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Product from '../components/Product';
 import styled from 'styled-components';
 // import { useQuery, gql } from '@apollo/client';
 
@@ -134,16 +135,6 @@ const Products = () => {
     }).then(res => res.json())
     .then(data => setSingleProduct(data.data.category.products))
   }, []);
-
-
-  // const [filter, setFilter] = useState(data);
-
-  // console.log({error, data, loading});
-
-  // const filterProducts = (cat) => {
-  //   const updatedList = data.categories.filter(category => category.name === cat);
-  //   setFilter(updatedList);
-  // };
 
   return (
       <Container>

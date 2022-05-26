@@ -1,3 +1,4 @@
+import AllProducts from './pages/AllProducts';
 import TechProducts from './pages/TechProducts';
 import Clothes from './pages/Clothes';
 import Navbar from './components/Navbar';
@@ -7,7 +8,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Clothes />
+      <AllProducts />
     </div>
   );
 }

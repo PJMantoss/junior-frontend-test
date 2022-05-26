@@ -27,9 +27,9 @@ const Product = ({product}) => {
                 <ShoppingCartOutlinedIcon />
             </Icon>
             <ProductName>{product.name}</ProductName>
-            {/* <ProductPrice>
-                {product.prices}
-            </ProductPrice> */}
+            <ProductPrice>
+                $
+            </ProductPrice>
         </PrdouctInfo>
     </Container>
   )

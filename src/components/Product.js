@@ -27,12 +27,12 @@ const Product = ({product}) => {
                 <ShoppingCartOutlinedIcon />
             </Icon>
             <ProductName>{product.name}</ProductName>
-            <ProductPrice>
+            {/* <ProductPrice>
                 {product.prices}
-            </ProductPrice>
+            </ProductPrice> */}
         </PrdouctInfo>
     </Container>
   )
 }
 
-export default Product
+export default Product;

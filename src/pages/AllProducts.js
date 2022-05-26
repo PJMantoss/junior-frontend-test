@@ -13,12 +13,14 @@ const GET_PRODUCT = `
         id
         name
         gallery
+        prices {
+          amount
       }
     }
   }
 `;
 
-const Products = () => {
+const AllProducts = () => {
 
   const [allProducts, setAllProducts] = useState([]);
 
@@ -41,4 +43,4 @@ const Products = () => {
   )
 }
 
-export default Products;
+export default AllProducts;

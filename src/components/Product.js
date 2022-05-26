@@ -13,15 +13,21 @@ const ProductImage = styled.img`
     height: 80%;
 `;
 
-const PrdouctInfo = styled.div``;
+const PrdouctInfo = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
 
 const Icon = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: end;
     width: 30px;
     height: 30px;
     background: #5ece7b;
     color: #ffffff;
     border-radius: 50%;
-    text-align: center;
 `;
 
 const ProductName = styled.h3``;
@@ -35,7 +41,7 @@ const Product = ({product}) => {
         <ProductImage src={product.gallery[0]} alt={product.name} />
         <PrdouctInfo>
             <Icon>
-                <ShoppingCartOutlinedIcon />
+                <ShoppingCartOutlinedIcon style={{width:"20px", height:"20px"}} />
             </Icon>
             <ProductName>{product.name}</ProductName>
             <ProductPrice>

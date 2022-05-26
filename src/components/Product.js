@@ -8,7 +8,7 @@ const ProductImage = styled.img``;
 
 const PrdouctInfo = styled.div``;
 
-const CategoryName = styled.h4``;
+const Icon = styled.div``;
 
 const ProductName = styled.h3``;
 
@@ -20,6 +20,7 @@ const Product = ({product}) => {
     <Container>
         <ProductImage src={product.gallery} alt={product.name} />
         <PrdouctInfo>
+            <Icon></Icon>
             <ProductName>{product.name}</ProductName>
             <ProductPrice>
                 {product.prices}

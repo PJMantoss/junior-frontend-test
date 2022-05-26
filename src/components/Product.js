@@ -4,12 +4,6 @@ import styled from 'styled-components';
 
 const Container = styled.div``;
 
-const Card = styled.ul`
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-`;
-
 const ProductItem = styled.li`
   list-style: none;
 `;
@@ -28,7 +22,7 @@ const ProductPrice = styled.p``;
 const Product = ({product}) => {
   return (
     <Container>
-        <ProductItem key={product.id}>
+        <ProductItem>
             {/* <ProductImage src={product.gallery} alt={product.name} /> */}
             <PrdouctInfo>
             {/* <CategoryName>{product.products.name}</CategoryName> */}

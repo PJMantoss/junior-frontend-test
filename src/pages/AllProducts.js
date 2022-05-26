@@ -8,6 +8,7 @@ const Container = styled.div``;
 const GET_PRODUCT = `
   {
     category {
+      name
       products {
         id
         name
@@ -27,7 +28,7 @@ const Products = () => {
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({ query: GET_PRODUCT })
     }).then(res => res.json())
-    .then(data => setAllProducts(data.data.category.products))
+    .then(data => console.log(data.data.category.products))
   }, []);
 
   return (

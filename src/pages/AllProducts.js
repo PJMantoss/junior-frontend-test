@@ -35,16 +35,7 @@ const Products = () => {
         {/* {JSON.stringify(allProducts, null, 2)} */}
         <Card>
         {allProducts.map(product => (
-            <ProductItem key={product.id}>
-              {/* <ProductImage src={product.gallery} alt={product.name} /> */}
-              <PrdouctInfo>
-                {/* <CategoryName>{product.products.name}</CategoryName> */}
-                <ProductName>{product.name}</ProductName>
-                {/* <ProductPrice>
-                  {product.prices}
-                </ProductPrice> */}
-              </PrdouctInfo>
-            </ProductItem>)
+            <Product />)
           )}
           </Card>
       </Container>

@@ -15,7 +15,12 @@ const ProductImage = styled.img`
 
 const PrdouctInfo = styled.div``;
 
-const Icon = styled.div``;
+const Icon = styled.div`
+    width: 26px;
+    height: 26px;
+    background: #5ece7b;
+    border-radius: 50%;
+`;
 
 const ProductName = styled.h3``;
 

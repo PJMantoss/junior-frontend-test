@@ -116,7 +116,7 @@ const Products = () => {
 
   // const [allProducts, setAllProducts] = useState([]);
 
-  const [singleProduct, setSingleProduct] = useState([]);
+  const [allProducts, setAllProducts] = useState([]);
 
   // useEffect(() => {
   //   fetch("http://localhost:4000/", {
@@ -133,45 +133,14 @@ const Products = () => {
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({ query: GET_PRODUCT })
     }).then(res => res.json())
-    .then(data => setSingleProduct(data.data.category.products))
+    .then(data => setAllProducts(data.data.category.products))
   }, []);
 
   return (
       <Container>
-        <Wrapper>
-            <Left>
-              <CategoryButton 
-                // onClick={() => filterProducts('all')}
-              >
-                all
-              </CategoryButton>
-
-              <CategoryButton 
-                // onClick={() => filterProducts('clothes')}
-              >
-                clothes
-              </CategoryButton>
-
-              <CategoryButton 
-                // onClick={() => filterProducts('tech')}
-              >
-                tech
-              </CategoryButton>
-            </Left>
-
-            <Center>
-              <Logo src={'./assets/logo.png'} />
-            </Center>
-
-            <Right>
-              <MenuItem>
-                Cart(0)
-              </MenuItem>
-            </Right>
-        </Wrapper>
         {/* {JSON.stringify(allProducts, null, 2)} */}
         <Card>
-        {singleProduct.map(product => (
+        {allProducts.map(product => (
             <ProductItem key={product.id}>
               {/* <ProductImage src={product.gallery} alt={product.name} /> */}
               <PrdouctInfo>

@@ -21,7 +21,7 @@ const ProductPrice = styled.p``;
 const Product = ({product}) => {
   return (
     <Container>
-        <ProductImage src={product.gallery} alt={product.name} />
+        <ProductImage src={product.gallery[0]} alt={product.name} />
         <PrdouctInfo>
             <Icon>
                 <ShoppingCartOutlinedIcon />

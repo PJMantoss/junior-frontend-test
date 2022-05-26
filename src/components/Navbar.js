@@ -35,7 +35,7 @@ const MenuItem = styled.div`
   cursor: pointer;
 `;
 
-const CategoryButton = styled.a`
+const CategoryLink = styled.a`
   display: inline-block;
   background: transparent;
   color: #1d1f22;
@@ -79,23 +79,23 @@ const Navbar = () => {
     <Container>
         <Wrapper>
             <Left>
-              <CategoryButton 
+              <CategoryLink 
                 // onClick={() => filterProducts('all')}
               >
                 all
-              </CategoryButton>
+              </CategoryLink>
 
-              <CategoryButton 
+              <CategoryLink 
                 // onClick={() => filterProducts('clothes')}
               >
                 clothes
-              </CategoryButton>
+              </CategoryLink>
 
-              <CategoryButton 
+              <CategoryLink 
                 // onClick={() => filterProducts('tech')}
               >
                 tech
-              </CategoryButton>
+              </CategoryLink>
             </Left>
 
             <Center>

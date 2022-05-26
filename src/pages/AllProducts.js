@@ -33,11 +33,9 @@ const Products = () => {
   return (
       <Container>
         {/* {JSON.stringify(allProducts, null, 2)} */}
-        <Card>
         {allProducts.map(product => (
             <Product product={product} />)
           )}
-          </Card>
       </Container>
   )
 }

@@ -2,10 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import Badge from '@mui/material/Badge';
-import { grey } from '@mui/material/colors';
+// import { grey } from '@mui/material/colors';
 // import { NavLink } from 'react-router-dom';
-
-const color = grey[900]; 
 
 const Container = styled.div``;
 
@@ -32,7 +30,9 @@ const Logo = styled.img`
 
 const Right = styled.div`
   flex: 1;
-  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 `;
 
 const MenuItem = styled.div`
@@ -109,7 +109,7 @@ const Navbar = () => {
 
             <Right>
               <MenuItem>
-                <Badge badgeContent={4} color="grey 900">
+                <Badge badgeContent={4} color="secondary">
                   <ShoppingCartOutlinedIcon />
                 </Badge>
               </MenuItem>

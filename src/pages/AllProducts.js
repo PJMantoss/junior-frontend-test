@@ -15,6 +15,7 @@ const GET_PRODUCT = `
         gallery
         prices {
           amount
+        }
       }
     }
   }

@@ -16,10 +16,12 @@ const ProductImage = styled.img`
 const PrdouctInfo = styled.div``;
 
 const Icon = styled.div`
-    width: 26px;
-    height: 26px;
+    width: 30px;
+    height: 30px;
     background: #5ece7b;
+    color: #ffffff;
     border-radius: 50%;
+    text-align: center;
 `;
 
 const ProductName = styled.h3``;

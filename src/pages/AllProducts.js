@@ -34,7 +34,7 @@ const Products = () => {
       <Container>
         {/* {JSON.stringify(allProducts, null, 2)} */}
         {allProducts.map(product => (
-            <Product product={product} />)
+            <Product key={product.id} product={product} />)
           )}
       </Container>
   )

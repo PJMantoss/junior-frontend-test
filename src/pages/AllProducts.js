@@ -38,7 +38,8 @@ const AllProducts = () => {
   }, []);
 
   const prices = allProducts.map(product => Object.values(product.prices)[0]);
-  const price = prices.map(price => price.amount);
+  console.log(prices)
+  // const price = prices.map(price => price.amount); price={price}
 
   return (
       <Container>

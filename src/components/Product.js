@@ -20,7 +20,7 @@ const Icon = styled.div`
 
 const Container = styled.div`
     width: 386px;
-    height: 444px;
+    height: 420px;
     flex: 1;
     padding: 16px;
     box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
@@ -52,6 +52,7 @@ const ProductName = styled.p`
     font-weight: 300;
     color: #1d1f22;
     line-height: 28.8px;
+    margin-top: 25px;
 `;
 
 const ProductPrice = styled.p`

@@ -13,7 +13,7 @@ const Container = styled.div`
 const ProductImage = styled.img`
     width: 338px;
     height: 338px;
-    margin: auto;
+    margin: 0 auto;
 `;
 
 const PrdouctInfo = styled.div`

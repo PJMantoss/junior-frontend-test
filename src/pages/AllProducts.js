@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Product from '../components/Product';
 import styled from 'styled-components';
-// import { useQuery, gql } from '@apollo/client';
 
 const Container = styled.div`
   display: flex;
@@ -29,6 +28,8 @@ const AllProducts = () => {
 
   const [allProducts, setAllProducts] = useState([]);
 
+  let prices;
+
   useEffect(() => {
     fetch("http://localhost:4000/", {
       method: "POST",
@@ -36,6 +37,8 @@ const AllProducts = () => {
       body: JSON.stringify({ query: GET_PRODUCT })
     }).then(res => res.json())
     .then(data => setAllProducts(data.data.category.products))
+
+    prices = Object.values();
   }, []);
 
   return (

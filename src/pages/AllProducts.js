@@ -16,7 +16,7 @@ const CategoryName = styled.h2`
     font-weight: 400;
     color: #1d1f22;
     line-height: 28.8px;
-    margin: 25px 0 0 30px;
+    margin: 40px 0 40px 40px;
 `;
 
 const GET_PRODUCT = `

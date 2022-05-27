@@ -35,7 +35,7 @@ const ProductName = styled.h3``;
 const ProductPrice = styled.p``;
 
 
-const Product = ({product, amount}) => {
+const Product = ({product, price}) => {
   return (
     <Container>
         <ProductImage src={product.gallery[0]} alt={product.name} />
@@ -45,7 +45,7 @@ const Product = ({product, amount}) => {
             </Icon>
             <ProductName>{product.name}</ProductName>
             <ProductPrice>
-                ${amount}
+                ${price}
             </ProductPrice>
         </PrdouctInfo>
     </Container>

@@ -41,6 +41,7 @@ const ProductName = styled.p`
     font-style: normal;
     font-weight: 300;
     color: #1d1f22;
+    line-height: 28.8px;
 `;
 
 const ProductPrice = styled.p``;

@@ -12,7 +12,8 @@ const Container = styled.div`
 `;
 
 const ProductImage = styled.img`
-    height: 80%;
+    width: 338px;
+    height: 338px;
 `;
 
 const PrdouctInfo = styled.div`

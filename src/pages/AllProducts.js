@@ -27,8 +27,7 @@ const GET_PRODUCT = `
 const AllProducts = () => {
 
   const [allProducts, setAllProducts] = useState([]);
-
-  let prices;
+  const [allPrices, setAllPrices] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:4000/", {
@@ -37,9 +36,19 @@ const AllProducts = () => {
       body: JSON.stringify({ query: GET_PRODUCT })
     }).then(res => res.json())
     .then(data => setAllProducts(data.data.category.products))
-
-    prices = Object.values();
   }, []);
+
+  useEffect(() => {
+    fetch("http://localhost:4000/", {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({ query: GET_PRODUCT })
+    }).then(res => res.json())
+    .then(data => setAllPrices(data.data.category.products))
+  }, []);
+
+  const price = Object.values(allPrices);
+  console.log(price);
 
   return (
       <Container>

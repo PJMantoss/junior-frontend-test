@@ -37,9 +37,9 @@ const AllProducts = () => {
     .then(data => setAllProducts(data.data.category.products))
   }, []);
 
-  const prices = allProducts.map(product => Object.values(product.prices)[0]);
+  // const prices = allProducts.map(product => Object.values(product.prices)[0]);
   // console.log(prices) amount={amount}
-  const price = prices.map(price => price.amount);
+  // const price = prices.map(price => price.amount);
   // console.log(price);
 
   return (

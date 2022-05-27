@@ -30,9 +30,13 @@ const Icon = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: -28px;
+    right: 48px;
     background: #5ece7b;
     color: #ffffff;
     border-radius: 50%;
+    opacity: 0.00;
 `;
 
 const ProductName = styled.p`

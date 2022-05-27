@@ -15,6 +15,7 @@ const Icon = styled.div`
     color: #ffffff;
     border-radius: 50%;
     opacity: 0.0;
+    transition: opacity 1.5s, transform 1.5s;
 `;
 
 const Container = styled.div`
@@ -26,6 +27,7 @@ const Container = styled.div`
 
     &:hover ${Icon} {
         opacity: 1.0;
+        transform: rotate(360deg);
     }
 `;
 

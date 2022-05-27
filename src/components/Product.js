@@ -8,6 +8,10 @@ const Container = styled.div`
     flex: 1;
     padding: 16px;
     box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+
+    &:hover + PrdouctInfo + Icon {
+        opacity: 1.0;
+    }
 `;
 
 const ProductImage = styled.img`
@@ -36,7 +40,7 @@ const Icon = styled.div`
     background: #5ece7b;
     color: #ffffff;
     border-radius: 50%;
-    opacity: 1;
+    opacity: 0.0;
 `;
 
 const ProductName = styled.p`

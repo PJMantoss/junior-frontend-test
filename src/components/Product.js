@@ -3,17 +3,17 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import styled from 'styled-components';
 
 const Container = styled.div`
-    flex: 1;
-    margin: 5px;
     width: 386px;
     height: 444px;
-    justify-content: center;
-    align-items: center;
+    flex: 1;
+    padding: 16px;
+    box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
 `;
 
 const ProductImage = styled.img`
     width: 338px;
     height: 338px;
+    margin: auto;
 `;
 
 const PrdouctInfo = styled.div`

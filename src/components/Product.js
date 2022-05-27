@@ -3,10 +3,9 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import styled from 'styled-components';
 
 const Container = styled.div`
-    flex: 1;
     margin: 5px;
-    width: 33.333%;
-    height: 350px;
+    width: 386px;
+    height: 444px;
 `;
 
 const ProductImage = styled.img`

@@ -10,7 +10,7 @@ const Icon = styled.div`
     justify-content: center;
     position: absolute;
     top: -28px;
-    right: 48px;
+    right: 125px;
     background: #5ece7b;
     color: #ffffff;
     border-radius: 50%;

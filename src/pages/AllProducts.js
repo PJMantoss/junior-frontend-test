@@ -9,6 +9,16 @@ const Container = styled.div`
   padding: 20px;
 `;
 
+const CategoryName = styled.h2`
+    font-family: Raleway;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    color: #1d1f22;
+    line-height: 28.8px;
+    margin: 25px 0 0 30px;
+`;
+
 const GET_PRODUCT = `
   {
     category {
@@ -44,12 +54,15 @@ const AllProducts = () => {
   // console.log(price);
 
   return (
+    <>
+    <CategoryName>All Products</CategoryName>
       <Container>
         {/* {JSON.stringify(allProducts, null, 2)} */}
         {allProducts.map(product => (
             <Product key={product.id} product={product} />)
           )}
       </Container>
+    </>
   )
 }
 

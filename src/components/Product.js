@@ -36,7 +36,7 @@ const Icon = styled.div`
     background: #5ece7b;
     color: #ffffff;
     border-radius: 50%;
-    opacity: 0.00;
+    opacity: 1;
 `;
 
 const ProductName = styled.p`
@@ -48,7 +48,14 @@ const ProductName = styled.p`
     line-height: 28.8px;
 `;
 
-const ProductPrice = styled.p``;
+const ProductPrice = styled.p`
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    color: #1d1f22;
+    line-height: 28.8px;
+`;
 
 
 const Product = ({product, price}) => {

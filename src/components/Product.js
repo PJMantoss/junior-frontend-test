@@ -35,7 +35,13 @@ const Icon = styled.div`
     border-radius: 50%;
 `;
 
-const ProductName = styled.h3``;
+const ProductName = styled.p`
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    color: #1d1f22;
+`;
 
 const ProductPrice = styled.p``;
 

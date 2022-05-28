@@ -64,6 +64,19 @@ const ProductPrice = styled.p`
     line-height: 28.8px;
 `;
 
+const GET_PRODUCT = `
+  {
+    category {
+      products {
+        id
+        prices {
+          amount
+        }
+      }
+    }
+  }
+`;
+
 
 const Product = ({product, price}) => {
   return (

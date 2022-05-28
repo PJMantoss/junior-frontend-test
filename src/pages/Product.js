@@ -14,19 +14,43 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
+const ImagesContainer = styled.div``;
+
+const ImgContainer = styled.div``;
+
 const Images = styled.img``;
 
-const ProductImg = styled.img``;
+const InfoContainer = styled.div``;
+
+const Name = styled.h2``;
+
+const Desc = styled.p``;
+
+const Size = styled.div``;
+
+const Color = styled.div``;
+
+const Price = styled.p``;
 
 const Product = () => {
   return (
     <Container>
         <Wrapper>
-            <Images></Images>
+            <ImagesContainer>
+                <Images />
+            </ImagesContainer>
 
-            <ProductImg></ProductImg>
+            <ImgContainer>
+                <Images />
+            </ImgContainer>
 
-            <Info></Info>
+            <InfoContainer>
+                <Name></Name>
+                <Desc></Desc>
+                <Size></Size>
+                <Color></Color>
+                <Price></Price>
+            </InfoContainer>
         </Wrapper>
     </Container>
   )

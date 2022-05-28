@@ -23,7 +23,15 @@ const ImgContainer = styled.div`
     flex: 2;
 `;
 
-const Images = styled.img``;
+const Images = styled.img`
+    width: 100%;
+    height: 20vh;
+`;
+
+const Img = styled.img`
+    width: 100%;
+    height: 80vh;
+`;
 
 const InfoContainer = styled.div`
     flex: 2;

@@ -7,19 +7,28 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  padding: 10px 20px;
+  padding: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
-const ImagesContainer = styled.div``;
+const ImagesContainer = styled.div`
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+`;
 
-const ImgContainer = styled.div``;
+const ImgContainer = styled.div`
+    flex: 2;
+`;
 
 const Images = styled.img``;
 
-const InfoContainer = styled.div``;
+const InfoContainer = styled.div`
+    flex: 2;
+    display: flex;
+    flex-direction: column;`;
 
 const Name = styled.h2``;
 

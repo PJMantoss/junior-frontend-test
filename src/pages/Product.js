@@ -4,13 +4,12 @@ import styled from 'styled-components';
 const Container = styled.div`
   width: 1440px;
   margin: 0 auto;
-  padding: 20px;
 `;
 
 const Wrapper = styled.div`
   padding: 10px 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 `;
 
@@ -45,11 +44,11 @@ const Product = () => {
             </ImgContainer>
 
             <InfoContainer>
-                <Name></Name>
-                <Desc></Desc>
-                <Size></Size>
-                <Color></Color>
-                <Price></Price>
+                <Name>Nike Shoe</Name>
+                <Desc>Running Shoes</Desc>
+                <Size>SIZE:</Size>
+                <Color>COLOR:</Color>
+                <Price>$50</Price>
             </InfoContainer>
         </Wrapper>
     </Container>

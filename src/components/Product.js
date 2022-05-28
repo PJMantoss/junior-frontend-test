@@ -16,6 +16,10 @@ const Icon = styled.div`
     border-radius: 50%;
     opacity: 0.0;
     transition: opacity 1.5s, transform 1.5s;
+
+    &:hover{
+        transform: scale(1.1);
+    }
 `;
 
 const Container = styled.div`

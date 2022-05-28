@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import styled from 'styled-components';
 
@@ -79,6 +79,22 @@ const GET_PRODUCT = `
 
 
 const Product = ({product, price}) => {
+    const [productPrice, setProductPrice] = useState(null);
+
+  useEffect(() => {
+    fetch("http://localhost:4000/", {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({ query: GET_PRODUCT })
+    }).then(res => res.json())
+    .then(data => setProductPrice(data.data.category.products))
+  }, []);
+
+  const prices = productPrice.map(product => Object.values(product.prices)[0]);
+  console.log(prices) 
+  // const price = prices.map(price => price.amount);
+  // console.log(price); amount={amount}
+
   return (
     <Container>
         <ProductImage src={product.gallery[0]} alt={product.name} />

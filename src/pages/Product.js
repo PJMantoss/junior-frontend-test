@@ -14,9 +14,21 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
+const Images = styled.img``;
+
+const ProductImg = styled.img``;
+
 const Product = () => {
   return (
-    <div>Product</div>
+    <Container>
+        <Wrapper>
+            <Images></Images>
+
+            <ProductImg></ProductImg>
+
+            <Info></Info>
+        </Wrapper>
+    </Container>
   )
 }
 

@@ -36,7 +36,9 @@ const Img = styled.img`
 const InfoContainer = styled.div`
     flex: 2;
     display: flex;
-    flex-direction: column;`;
+    flex-direction: column;
+    padding: 0 50px;
+`;
 
 const Name = styled.h2``;
 

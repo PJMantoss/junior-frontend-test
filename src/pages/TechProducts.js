@@ -25,8 +25,6 @@ const ProductImage = styled.img``;
 
 const PrdouctInfo = styled.div``;
 
-const CategoryName = styled.h4``;
-
 const ProductName = styled.h3``;
 
 const ProductPrice = styled.p``;

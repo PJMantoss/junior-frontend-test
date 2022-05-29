@@ -58,7 +58,14 @@ const Desc = styled.p`
     line-height: 27px;
 `;
 
-const Span = styled.span``;
+const Span = styled.span`
+    font-size: 16px;
+    color: #1d1f22;
+    font-style: normal;
+    font-family: "Roboto Condensed";
+    font-weight: 700;
+    line-height: 16px;
+`;
 
 const Size = styled.div``;
 

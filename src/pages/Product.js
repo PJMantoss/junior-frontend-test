@@ -58,7 +58,7 @@ const Desc = styled.p`
     line-height: 27px;
 `;
 
-const Span = styled.span`
+const FilterTitle = styled.span`
     font-size: 16px;
     color: #1d1f22;
     font-style: normal;
@@ -88,12 +88,20 @@ const Product = () => {
             <InfoContainer>
                 <Title>Nike Shoe</Title>
                 <Desc>Running Shoes</Desc>
-                <Size>
-                    <Span>SIZE:</Span>
-                </Size>
-                <Color>
-                    <Span>COLOR:</Span>
-                </Color>
+                <FilterContainer>
+                    <Filter>
+                        <FilterTitle>SIZE:</FilterTitle>
+                        <FilterSize />
+                    </Filter>
+                
+                    <Filter>
+                        <FilterTitle>COLOR:</FilterTitle>
+                        <FilterColor color="black" />
+                        <FilterColor color="darkblue" />
+                        <FilterColor color="grey" />
+                    </Filter>
+                
+                </FilterContainer>
                 <Price>$50</Price>
             </InfoContainer>
         </Wrapper>

@@ -40,7 +40,12 @@ const InfoContainer = styled.div`
     padding: 0 50px;
 `;
 
-const Name = styled.h2``;
+const Title = styled.h2`
+    font-size: 30px;
+    font-style: normal;
+    font-family: Raleway;
+    font-weight: 600;
+`;
 
 const Desc = styled.p``;
 
@@ -63,7 +68,7 @@ const Product = () => {
             </ImgContainer>
 
             <InfoContainer>
-                <Name>Nike Shoe</Name>
+                <Title>Nike Shoe</Title>
                 <Desc>Running Shoes</Desc>
                 <Size>SIZE:</Size>
                 <Color>COLOR:</Color>

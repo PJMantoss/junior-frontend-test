@@ -58,6 +58,10 @@ const Desc = styled.p`
     line-height: 27px;
 `;
 
+const FilterContainer = styled.div``;
+
+const Filter = styled.div``;
+
 const FilterTitle = styled.span`
     font-size: 16px;
     color: #1d1f22;
@@ -100,7 +104,6 @@ const Product = () => {
                         <FilterColor color="darkblue" />
                         <FilterColor color="grey" />
                     </Filter>
-                
                 </FilterContainer>
                 <Price>$50</Price>
             </InfoContainer>

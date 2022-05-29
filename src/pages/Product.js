@@ -49,7 +49,16 @@ const Title = styled.h2`
     line-height: 27px;
 `;
 
-const Desc = styled.p``;
+const Desc = styled.p`
+    font-size: 30px;
+    color: #1d1f22;
+    font-style: normal;
+    font-family: Raleway;
+    font-weight: 400;
+    line-height: 27px;
+`;
+
+const Span = styled.span``;
 
 const Size = styled.div``;
 
@@ -72,8 +81,12 @@ const Product = () => {
             <InfoContainer>
                 <Title>Nike Shoe</Title>
                 <Desc>Running Shoes</Desc>
-                <Size>SIZE:</Size>
-                <Color>COLOR:</Color>
+                <Size>
+                    <Span>SIZE:</Span>
+                </Size>
+                <Color>
+                    <Span>COLOR:</Span>
+                </Color>
                 <Price>$50</Price>
             </InfoContainer>
         </Wrapper>

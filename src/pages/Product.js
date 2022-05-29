@@ -58,9 +58,14 @@ const Desc = styled.p`
     line-height: 27px;
 `;
 
-const FilterContainer = styled.div``;
+const FilterContainer = styled.div`
+    margin: 30px 0;
+`;
 
-const Filter = styled.div``;
+const Filter = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
 
 const FilterSize = styled.div``;
 

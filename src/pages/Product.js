@@ -42,9 +42,11 @@ const InfoContainer = styled.div`
 
 const Title = styled.h2`
     font-size: 30px;
+    color: #1d1f22;
     font-style: normal;
     font-family: Raleway;
     font-weight: 600;
+    line-height: 27px;
 `;
 
 const Desc = styled.p``;

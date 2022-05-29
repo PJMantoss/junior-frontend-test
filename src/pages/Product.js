@@ -62,6 +62,10 @@ const FilterContainer = styled.div``;
 
 const Filter = styled.div``;
 
+const FilterSize = styled.div``;
+
+const FilterColor = styled.div``;
+
 const FilterTitle = styled.span`
     font-size: 16px;
     color: #1d1f22;

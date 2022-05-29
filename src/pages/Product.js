@@ -65,6 +65,7 @@ const FilterContainer = styled.div`
 const Filter = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: start;
 `;
 
 const FilterSize = styled.div``;
@@ -104,14 +105,20 @@ const Product = () => {
                 <FilterContainer>
                     <Filter>
                         <FilterTitle>SIZE:</FilterTitle>
-                        <FilterSize />
+                        <Size>
+                            <FilterSize />
+                            <FilterSize />
+                            <FilterSize />
+                        </Size>
                     </Filter>
                 
                     <Filter>
                         <FilterTitle>COLOR:</FilterTitle>
-                        <FilterColor color="black" />
-                        <FilterColor color="darkblue" />
-                        <FilterColor color="grey" />
+                        <Color>
+                            <FilterColor color="black" />
+                            <FilterColor color="darkblue" />
+                            <FilterColor color="grey" />
+                        </Color>
                     </Filter>
                 </FilterContainer>
                 <Price>$50</Price>

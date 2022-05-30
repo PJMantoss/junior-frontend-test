@@ -20,7 +20,7 @@ const ImagesContainer = styled.div`
 `;
 
 const ImgContainer = styled.div`
-    flex: 1;
+    flex: 2;
 `;
 
 const Images = styled.img`
@@ -34,7 +34,7 @@ const Img = styled.img`
 `;
 
 const InfoContainer = styled.div`
-    flex: 1;
+    flex: 2;
     display: flex;
     flex-direction: column;
     padding: 0 20px;
@@ -152,8 +152,6 @@ const Button = styled.a`
     padding: 16px 32px;
     background: #5ece7b;
     color: #fff;
-    width: 292px;
-    height: 52px;
 `;
 
 const Price = styled.p``;

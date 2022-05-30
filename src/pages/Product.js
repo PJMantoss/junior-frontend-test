@@ -66,6 +66,7 @@ const Filter = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: start;
+    margin-bottom: 12px;
 `;
 
 const FilterSize = styled.div``;

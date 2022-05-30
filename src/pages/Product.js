@@ -91,8 +91,8 @@ const Size1 = styled.div`
     display: inherit;
     align-items: center;
     justify-content: center;
-    width: 63px;
-    height: 45px;
+    width: 50px;
+    height: 35px;
     border: 1px solid #1d1f22;
     background: #fff;
     color: #1d1f22;
@@ -105,8 +105,8 @@ const Size2 = styled.div`
     display: inherit;
     align-items: center;
     justify-content: center;
-    width: 63px;
-    height: 45px;
+    width: 50px;
+    height: 35px;
     border: 1px solid #1d1f22;
     background: #1d1f22;
     color: #fff;
@@ -119,8 +119,8 @@ const Size3 = styled.div`
     display: inherit;
     align-items: center;
     justify-content: center;
-    width: 63px;
-    height: 45px;
+    width: 50px;
+    height: 35px;
     border: 1px solid #1d1f22;
     background: #fff;
     color: #1d1f22;
@@ -133,8 +133,8 @@ const Size4 = styled.div`
     display: inherit;
     align-items: center;
     justify-content: center;
-    width: 63px;
-    height: 45px;
+    width: 50px;
+    height: 35px;
     border: 1px solid #1d1f22;
     background: #fff;
     color: #1d1f22;

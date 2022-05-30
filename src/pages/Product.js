@@ -177,18 +177,21 @@ const Button = styled.a`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 16px 32px;
+    padding: 14px 16px;
+    width: 50%;
     background: #5ece7b;
     color: #fff;
+    text-transform: uppercase;
 `;
 
 const Price = styled.p`
-    font-size: 30px;
+    font-size: 25px;
     color: #1d1f22;
     font-style: normal;
     font-family: Raleway;
-    font-weight: 400;
-    line-height: 27px;
+    font-weight: 700;
+    line-height: 18px;
+    margin-bottom: 20px;
 `;
 
 const Product = () => {
@@ -226,7 +229,8 @@ const Product = () => {
                         </Color>
                     </Filter>
                 </FilterContainer>
-                <Price>$50</Price>
+                <FilterTitle>PRICE:</FilterTitle>
+                <Price>$50.00</Price>
                 <Button>Add To Cart</Button>
             </InfoContainer>
         </Wrapper>

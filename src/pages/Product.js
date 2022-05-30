@@ -69,10 +69,6 @@ const Filter = styled.div`
     margin-bottom: 20px;
 `;
 
-const FilterSize = styled.div``;
-
-const FilterColor = styled.div``;
-
 const FilterTitle = styled.span`
     font-size: 16px;
     color: #1d1f22;
@@ -153,6 +149,30 @@ const Color = styled.div`
     align-items: center;
 `;
 
+const FilterColor1 = styled.div`
+    width: 26px;
+    height: 26px;
+    border: 1px solid #5ece7b;
+    margin-right: 8px;
+    background: #d3d2d5;
+`;
+
+const FilterColor2 = styled.div`
+    width: 26px;
+    height: 26px;
+    border: 1px solid #5ece7b;
+    margin-right: 8px;
+    background: #2b2b2b;
+`;
+
+const FilterColor3 = styled.div`
+    width: 26px;
+    height: 26px;
+    border: 1px solid #5ece7b;
+    margin-right: 8px;
+    background: #0f6450;
+`;
+
 const Button = styled.a`
     display: flex;
     align-items: center;
@@ -162,7 +182,14 @@ const Button = styled.a`
     color: #fff;
 `;
 
-const Price = styled.p``;
+const Price = styled.p`
+    font-size: 30px;
+    color: #1d1f22;
+    font-style: normal;
+    font-family: Raleway;
+    font-weight: 400;
+    line-height: 27px;
+`;
 
 const Product = () => {
   return (
@@ -193,9 +220,9 @@ const Product = () => {
                     <Filter>
                         <FilterTitle>COLOR:</FilterTitle>
                         <Color>
-                            <FilterColor />
-                            <FilterColor />
-                            <FilterColor />
+                            <FilterColor1 />
+                            <FilterColor2 />
+                            <FilterColor3 />
                         </Color>
                     </Filter>
                 </FilterContainer>

@@ -28,7 +28,10 @@ const Cart = () => {
       <>
         <PageName>Cart</PageName>
         <Container>
-            <Wrapper></Wrapper>
+            <Wrapper>
+                <Details></Details>
+                <Quantity></Quantity>
+            </Wrapper>
         </Container>
       </>
   )

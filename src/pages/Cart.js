@@ -8,7 +8,10 @@ const Container = styled.div`
 
 const Cart = () => {
   return (
-    <div>Cart</div>
+      <>
+        <PageName>All Products</PageName>
+        <Container>Cart</Container>
+      </>
   )
 }
 

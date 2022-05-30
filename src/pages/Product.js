@@ -81,7 +81,13 @@ const FilterTitle = styled.span`
     line-height: 16px;
 `;
 
-const Size = styled.div``;
+const Size = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`;
+
+const Size1 = styled.div``;
 
 const Color = styled.div``;
 
@@ -106,9 +112,10 @@ const Product = () => {
                     <Filter>
                         <FilterTitle>SIZE:</FilterTitle>
                         <Size>
-                            <FilterSize />
-                            <FilterSize />
-                            <FilterSize />
+                            <Size1></Size1>
+                            <Size2></Size2>
+                            <Size3></Size3>
+                            <Size4></Size4>
                         </Size>
                     </Filter>
                 

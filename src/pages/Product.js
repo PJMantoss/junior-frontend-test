@@ -108,6 +108,9 @@ const Size2 = styled.div`
     height: 45px;
     border: 1px solid #1d1f22;
     backgroung: #fff;
+    color: #1d1f22;
+    font-size: 16px;
+    line-height: 18px;
 `;
 
 const Size3 = styled.div`
@@ -118,6 +121,9 @@ const Size3 = styled.div`
     height: 45px;
     border: 1px solid #1d1f22;
     backgroung: #fff;
+    color: #1d1f22;
+    font-size: 16px;
+    line-height: 18px;
 `;
 
 const Size4 = styled.div`
@@ -128,6 +134,9 @@ const Size4 = styled.div`
     height: 45px;
     border: 1px solid #1d1f22;
     backgroung: #fff;
+    color: #1d1f22;
+    font-size: 16px;
+    line-height: 18px;
 `;
 
 const Color = styled.div``;

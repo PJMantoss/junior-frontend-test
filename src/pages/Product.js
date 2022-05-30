@@ -95,6 +95,39 @@ const Size1 = styled.div`
     height: 45px;
     border: 1px solid #1d1f22;
     backgroung: #fff;
+    color: #1d1f22;
+    font-size: 16px;
+    line-height: 18px;
+`;
+
+const Size2 = styled.div`
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    width: 63px;
+    height: 45px;
+    border: 1px solid #1d1f22;
+    backgroung: #fff;
+`;
+
+const Size3 = styled.div`
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    width: 63px;
+    height: 45px;
+    border: 1px solid #1d1f22;
+    backgroung: #fff;
+`;
+
+const Size4 = styled.div`
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    width: 63px;
+    height: 45px;
+    border: 1px solid #1d1f22;
+    backgroung: #fff;
 `;
 
 const Color = styled.div``;

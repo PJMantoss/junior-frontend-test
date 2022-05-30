@@ -97,6 +97,7 @@ const Size1 = styled.div`
     backgroung: #fff;
     color: #1d1f22;
     font-size: 16px;
+    font-family: 'Source Sans Pro';
     line-height: 18px;
 `;
 
@@ -107,9 +108,10 @@ const Size2 = styled.div`
     width: 63px;
     height: 45px;
     border: 1px solid #1d1f22;
-    backgroung: #fff;
-    color: #1d1f22;
+    backgroung: #1d1f22;
+    color: #fff;
     font-size: 16px;
+    font-family: 'Source Sans Pro';
     line-height: 18px;
 `;
 
@@ -123,6 +125,7 @@ const Size3 = styled.div`
     backgroung: #fff;
     color: #1d1f22;
     font-size: 16px;
+    font-family: 'Source Sans Pro';
     line-height: 18px;
 `;
 
@@ -136,6 +139,7 @@ const Size4 = styled.div`
     backgroung: #fff;
     color: #1d1f22;
     font-size: 16px;
+    font-family: 'Source Sans Pro';
     line-height: 18px;
 `;
 
@@ -162,10 +166,10 @@ const Product = () => {
                     <Filter>
                         <FilterTitle>SIZE:</FilterTitle>
                         <Size>
-                            <Size1></Size1>
-                            <Size2></Size2>
-                            <Size3></Size3>
-                            <Size4></Size4>
+                            <Size1>XS</Size1>
+                            <Size2>S</Size2>
+                            <Size3>M</Size3>
+                            <Size4>L</Size4>
                         </Size>
                     </Filter>
                 

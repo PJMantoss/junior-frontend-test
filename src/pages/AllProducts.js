@@ -13,7 +13,7 @@ const Container = styled.div`
 
 const CategoryName = styled.h2`
     font-family: Raleway;
-    font-size: 42px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 400;
     color: #1d1f22;

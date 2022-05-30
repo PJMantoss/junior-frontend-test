@@ -66,7 +66,7 @@ const Filter = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: start;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
 `;
 
 const FilterSize = styled.div``;
@@ -80,7 +80,7 @@ const FilterTitle = styled.span`
     font-family: "Roboto Condensed";
     font-weight: 700;
     line-height: 16px;
-    margin-bottom: 12px;
+    margin-bottom: 7px;
 `;
 
 const Size = styled.div`
@@ -148,7 +148,10 @@ const Size4 = styled.div`
     line-height: 18px;
 `;
 
-const Color = styled.div``;
+const Color = styled.div`
+    display: flex;
+    align-items: center;
+`;
 
 const Button = styled.a`
     display: flex;
@@ -190,9 +193,9 @@ const Product = () => {
                     <Filter>
                         <FilterTitle>COLOR:</FilterTitle>
                         <Color>
-                            <FilterColor color="black" />
-                            <FilterColor color="darkblue" />
-                            <FilterColor color="grey" />
+                            <FilterColor />
+                            <FilterColor />
+                            <FilterColor />
                         </Color>
                     </Filter>
                 </FilterContainer>

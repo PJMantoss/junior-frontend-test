@@ -87,7 +87,13 @@ const Size = styled.div`
     align-items: center;
 `;
 
-const Size1 = styled.div``;
+const Size1 = styled.div`
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #1d1f22;
+    backgroung: #fff;
+`;
 
 const Color = styled.div``;
 

@@ -79,11 +79,11 @@ const FilterTitle = styled.span`
     font-family: "Roboto Condensed";
     font-weight: 700;
     line-height: 16px;
+    margin-bottom: 12px;
 `;
 
 const Size = styled.div`
     display: flex;
-    justify-content: space-between;
     align-items: center;
 `;
 
@@ -93,6 +93,7 @@ const Size1 = styled.div`
     justify-content: center;
     width: 50px;
     height: 35px;
+    margin-right: 12px;
     border: 1px solid #1d1f22;
     background: #fff;
     color: #1d1f22;
@@ -107,6 +108,7 @@ const Size2 = styled.div`
     justify-content: center;
     width: 50px;
     height: 35px;
+    margin-right: 12px;
     border: 1px solid #1d1f22;
     background: #1d1f22;
     color: #fff;
@@ -121,6 +123,7 @@ const Size3 = styled.div`
     justify-content: center;
     width: 50px;
     height: 35px;
+    margin-right: 12px;
     border: 1px solid #1d1f22;
     background: #fff;
     color: #1d1f22;
@@ -135,6 +138,7 @@ const Size4 = styled.div`
     justify-content: center;
     width: 50px;
     height: 35px;
+    margin-right: 12px;
     border: 1px solid #1d1f22;
     background: #fff;
     color: #1d1f22;

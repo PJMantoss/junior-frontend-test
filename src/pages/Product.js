@@ -145,6 +145,17 @@ const Size4 = styled.div`
 
 const Color = styled.div``;
 
+const Button = styled.a`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    background: #5ece7b;
+    color: #fff;
+    width: 292px;
+    height: 52px;
+`;
+
 const Price = styled.p``;
 
 const Product = () => {
@@ -183,6 +194,7 @@ const Product = () => {
                     </Filter>
                 </FilterContainer>
                 <Price>$50</Price>
+                <Button>Add To Cart</Button>
             </InfoContainer>
         </Wrapper>
     </Container>

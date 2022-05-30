@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  width: 1440px;
+  width: 1300px;
   margin: 0 auto;
 `;
 
@@ -20,7 +20,7 @@ const ImagesContainer = styled.div`
 `;
 
 const ImgContainer = styled.div`
-    flex: 2;
+    flex: 1;
 `;
 
 const Images = styled.img`
@@ -34,10 +34,10 @@ const Img = styled.img`
 `;
 
 const InfoContainer = styled.div`
-    flex: 2;
+    flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 0 50px;
+    padding: 0 20px;
 `;
 
 const Title = styled.h2`
@@ -94,7 +94,7 @@ const Size1 = styled.div`
     width: 63px;
     height: 45px;
     border: 1px solid #1d1f22;
-    backgroung: #fff;
+    background: #fff;
     color: #1d1f22;
     font-size: 16px;
     font-family: 'Source Sans Pro';
@@ -108,7 +108,7 @@ const Size2 = styled.div`
     width: 63px;
     height: 45px;
     border: 1px solid #1d1f22;
-    backgroung: #1d1f22;
+    background: #1d1f22;
     color: #fff;
     font-size: 16px;
     font-family: 'Source Sans Pro';
@@ -122,7 +122,7 @@ const Size3 = styled.div`
     width: 63px;
     height: 45px;
     border: 1px solid #1d1f22;
-    backgroung: #fff;
+    background: #fff;
     color: #1d1f22;
     font-size: 16px;
     font-family: 'Source Sans Pro';
@@ -136,7 +136,7 @@ const Size4 = styled.div`
     width: 63px;
     height: 45px;
     border: 1px solid #1d1f22;
-    backgroung: #fff;
+    background: #fff;
     color: #1d1f22;
     font-size: 16px;
     font-family: 'Source Sans Pro';

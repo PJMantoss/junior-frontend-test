@@ -51,9 +51,9 @@ const AllProducts = () => {
   }, []);
 
   const prices = allProducts.map(product => Object.values(product.prices)[0]);
-  // console.log(prices) amount={amount}
-  const price = prices.next(price => price.amount).value;
-  // console.log(price);
+  console.log(prices) 
+  // const price = prices.next().value;
+  // console.log(price); amount={amount}
 
   return (
     <>

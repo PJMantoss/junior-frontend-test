@@ -9,7 +9,7 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  padding: 10px 0;
+  padding: 10px 0 5px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,7 +39,7 @@ const Title = styled.h2`
     font-style: normal;
     font-family: Raleway;
     font-weight: 600;
-    line-height: 27px;
+    line-height: 24px;
 `;
 
 const Desc = styled.p`
@@ -183,12 +183,13 @@ const Img = styled.img`
 const Checkout = styled.div``;
 
 const Paragraph = styled.p`
-    font-size: 24px;
+    font-size: 16px;
     color: #1d1f22;
     font-style: normal;
     font-family: Raleway;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 18px;
+    margin: 0 0 5px 0;
 `;
 
 const Button = styled.button`
@@ -196,6 +197,7 @@ const Button = styled.button`
     align-items: center;
     justify-content: center;
     padding: 10px 16px;
+    margin-top: 10px;
     width: 20%;
     background: #5ece7b;
     color: #fff;
@@ -205,13 +207,12 @@ const Button = styled.button`
 `;
 
 const Span = styled.span`
-    font-size: 25px;
+    font-size: 16px;
     color: #1d1f22;
     font-style: normal;
     font-family: Raleway;
     font-weight: 700;
     line-height: 18px;
-    margin-bottom: 20px;
 `;
 
 const Cart = () => {

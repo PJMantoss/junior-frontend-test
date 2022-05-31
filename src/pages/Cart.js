@@ -30,6 +30,24 @@ const Details = styled.div`
     padding: 0 20px;
 `;
 
+const Title = styled.h2`
+    font-size: 30px;
+    color: #1d1f22;
+    font-style: normal;
+    font-family: Raleway;
+    font-weight: 600;
+    line-height: 27px;
+`;
+
+const Desc = styled.p`
+    font-size: 30px;
+    color: #1d1f22;
+    font-style: normal;
+    font-family: Raleway;
+    font-weight: 400;
+    line-height: 27px;
+`;
+
 const FilterContainer = styled.div`
     margin: 30px 0;
 `;

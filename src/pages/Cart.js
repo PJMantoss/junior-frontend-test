@@ -166,6 +166,13 @@ const FilterColor3 = styled.div`
     background: #0f6450;
 `;
 
+const RightDiv = styled.div`
+    display: flex;
+    height: inherit;
+    align-items: center;
+    justify-content: center;
+`;
+
 const Quantity = styled.div`
     display: flex;
     flex-direction: column;
@@ -178,6 +185,15 @@ const Amount = styled.span`
     display: flex;
     align-items: center;
     justify-content: center;
+`;
+
+const ImgContainer = styled.div`
+    flex: 1;
+`;
+
+const Img = styled.img`
+    width: 100%;
+    height: 80vh;
 `;
 
 const Cart = () => {
@@ -210,11 +226,13 @@ const Cart = () => {
                         </Filter>
                     </FilterContainer>
                 </Details>
-                <Quantity>
-                    <AddIcon style={{width: "25px", height: "25px", border: "1px solid #1d1f22"}} />
-                        <Amount> {10} </Amount>
-                    <RemoveIcon style={{width: "25px", height: "25px", border: "1px solid #1d1f22"}} />
-                </Quantity>
+                <RightDiv>
+                    <Quantity>
+                        <AddIcon style={{width: "25px", height: "25px", border: "1px solid #1d1f22"}} />
+                            <Amount> {10} </Amount>
+                        <RemoveIcon style={{width: "25px", height: "25px", border: "1px solid #1d1f22"}} />
+                    </Quantity>
+                </RightDiv>
             </Wrapper>
         </Container>
       </>

@@ -197,11 +197,15 @@ const Cart = () => {
                         </Filter>
                     </FilterContainer>
                 </Details>
-                <Quantity></Quantity>
+                <Quantity>
+                    <AddIcon />
+                        <Amount> {10} </Amount>
+                    <RemoveIcon />
+                </Quantity>
             </Wrapper>
         </Container>
       </>
   )
 }
 
-export default Cart
+export default Cart;

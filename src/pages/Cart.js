@@ -211,9 +211,9 @@ const Cart = () => {
                     </FilterContainer>
                 </Details>
                 <Quantity>
-                    <AddIcon />
+                    <AddIcon style={{width: "25px", height: "25px", border: "1px solid #1d1f22"}} />
                         <Amount> {10} </Amount>
-                    <RemoveIcon />
+                    <RemoveIcon style={{width: "25px", height: "25px", border: "1px solid #1d1f22"}} />
                 </Quantity>
             </Wrapper>
         </Container>

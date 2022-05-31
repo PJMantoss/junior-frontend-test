@@ -52,8 +52,8 @@ const AllProducts = () => {
 
   const prices = allProducts.map(product => Object.values(product.prices)[0]);
   console.log(prices) 
-  const price = prices.map(amount => amount.amount);
-  // console.log(price); amount={amount}
+  // const price = prices.map(price => price.amount);
+  // console.log(price); price={price}
 
   return (
     <>
@@ -61,7 +61,7 @@ const AllProducts = () => {
       <Container>
         {/* {JSON.stringify(allProducts, null, 2)} */}
         {allProducts.map(product => (
-            <Product key={product.id} product={product} amount={amount} />)
+            <Product key={product.id} product={product} prices={prices.map(price => price.amount)} />)
           )}
       </Container>
     </>

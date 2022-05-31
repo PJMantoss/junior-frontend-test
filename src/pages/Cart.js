@@ -9,7 +9,7 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  padding: 10px 20px;
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -180,6 +180,40 @@ const Img = styled.img`
     height: 80vh;
 `;
 
+const Checkout = styled.div``;
+
+const Paragraph = styled.p`
+    font-size: 24px;
+    color: #1d1f22;
+    font-style: normal;
+    font-family: Raleway;
+    font-weight: 400;
+    line-height: 28px;
+`;
+
+const Button = styled.button`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    width: 20%;
+    background: #5ece7b;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+`;
+
+const Span = styled.span`
+    font-size: 25px;
+    color: #1d1f22;
+    font-style: normal;
+    font-family: Raleway;
+    font-weight: 700;
+    line-height: 18px;
+    margin-bottom: 20px;
+`;
+
 const Cart = () => {
   return (
       <>
@@ -189,6 +223,7 @@ const Cart = () => {
                 <Details>
                     <Title>Nike Shoe</Title>
                     <Desc>Running Shoes</Desc>
+                    <Span>$50.00</Span>
                     <FilterContainer>
                         <Filter>
                             <FilterTitle>SIZE:</FilterTitle>
@@ -218,6 +253,18 @@ const Cart = () => {
                     </Quantity>
                 </RightDiv>
             </Wrapper>
+            <Checkout>
+                <Paragraph>
+                    Tax 21%: <Span>$50.00</Span> 
+                </Paragraph>
+                <Paragraph>
+                    Quantity: <Span>5</Span>
+                </Paragraph>
+                <Paragraph>
+                    Total: <Span>$250.00</Span>
+                </Paragraph>
+                <Button>Order</Button>
+            </Checkout>
         </Container>
       </>
   )

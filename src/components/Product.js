@@ -89,7 +89,7 @@ const Product = ({product, price}) => {
             </Icon>
             <ProductName>{product.name}</ProductName>
             <ProductPrice>
-                ${50}
+                ${price}
             </ProductPrice>
         </PrdouctInfo>
     </Container>

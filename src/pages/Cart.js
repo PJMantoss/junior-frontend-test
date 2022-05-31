@@ -4,7 +4,7 @@ import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 
 const Container = styled.div`
-  width: 1240px;
+  width: 90%;
   margin: 0 auto;
 `;
 
@@ -142,28 +142,12 @@ const Color = styled.div`
     align-items: center;
 `;
 
-const FilterColor1 = styled.div`
+const FilterColor = styled.div`
     width: 26px;
     height: 26px;
     border: 1px solid #5ece7b;
     margin-right: 8px;
-    background: #d3d2d5;
-`;
-
-const FilterColor2 = styled.div`
-    width: 26px;
-    height: 26px;
-    border: 1px solid #5ece7b;
-    margin-right: 8px;
-    background: #2b2b2b;
-`;
-
-const FilterColor3 = styled.div`
-    width: 26px;
-    height: 26px;
-    border: 1px solid #5ece7b;
-    margin-right: 8px;
-    background: #0f6450;
+    background: ${props => props.color};
 `;
 
 const RightDiv = styled.div`
@@ -219,9 +203,9 @@ const Cart = () => {
                         <Filter>
                             <FilterTitle>COLOR:</FilterTitle>
                             <Color>
-                                <FilterColor1 />
-                                <FilterColor2 />
-                                <FilterColor3 />
+                                <FilterColor color="#d3d2d5" />
+                                <FilterColor color="#2b2b2b" />
+                                <FilterColor color="#0f6450" />
                             </Color>
                         </Filter>
                     </FilterContainer>

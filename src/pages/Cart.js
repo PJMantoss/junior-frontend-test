@@ -13,6 +13,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 288px;
 `;
 
 const PageName = styled.h2`
@@ -165,7 +166,19 @@ const FilterColor3 = styled.div`
     background: #0f6450;
 `;
 
-const Quantity = styled.div``;
+const Quantity = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+`;
+
+const Amount = styled.span`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
 
 const Cart = () => {
   return (

@@ -55,6 +55,7 @@ const AllProducts = () => {
   const price = prices.map(price => price.amount);
   // console.log(price); price={price}
   const productPrice = price.map(amount => amount);
+  console.log(productPrice)
 
   return (
     <>

@@ -54,7 +54,7 @@ const AllProducts = () => {
   // console.log(prices) 
   const price = prices.map(price => price.amount);
   // console.log(price); productPrice={productPrice}
-  const productPrice = price.reduce((sum,amount) => {return sum[amount]}, 0);
+  const productPrice = price.reduce((sum,amount) => {return sum - amount}, 0);
   console.log(productPrice); 
 
   return (

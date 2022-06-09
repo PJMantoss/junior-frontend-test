@@ -51,9 +51,9 @@ const AllProducts = () => {
   }, []);
 
   const prices = allProducts.map(product => Object.values(product.prices)[0]);
-  // console.log(prices) 
+  // console.log(prices) productPrice={productPrice}
   const price = prices.map(price => price.amount);
-  // console.log(price); productPrice={productPrice}
+  console.log(price); 
   const productPrice = price.reduce((sum,amount) => {return sum - amount}, 0);
   console.log(productPrice); 
 

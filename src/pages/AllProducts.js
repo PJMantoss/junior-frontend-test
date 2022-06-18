@@ -55,7 +55,7 @@ const AllProducts = () => {
   
   const price = prices.map(price => price.amount);
   console.log(price)
-  
+
   // let productPrice = 0;
   // for (const prc of price){
   //   productPrice += prc;
@@ -70,7 +70,7 @@ const AllProducts = () => {
       <Container>
         {/* {JSON.stringify(allProducts, null, 2)} */}
         {allProducts.map(product => (
-            <Product key={product.id} product={product} price={price.unshift()} />)
+            <Product key={product.id} product={product} price={price.pop()} />)
           )}
       </Container>
     </>

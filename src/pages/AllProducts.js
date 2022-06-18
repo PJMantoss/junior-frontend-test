@@ -54,7 +54,10 @@ const AllProducts = () => {
   // console.log(prices) 
   
   const price = prices.map(price => price.amount);
-  console.log(price.map(prc => prc)); 
+  let productPrice = 0;
+  for (const prc of price){
+    productPrice += prc;
+  };
   
   // const productPrice = price.reduce((prev,curr) => {return prev + curr}, 0);
   // console.log(productPrice); productPrice={productPrice}
@@ -65,7 +68,7 @@ const AllProducts = () => {
       <Container>
         {/* {JSON.stringify(allProducts, null, 2)} */}
         {allProducts.map(product => (
-            <Product key={product.id} product={product} />)
+            <Product key={product.id} product={product} productPrice={productPrice} />)
           )}
       </Container>
     </>

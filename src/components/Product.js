@@ -79,7 +79,7 @@ const GET_PRODUCT = `
 `;
 
 
-const Product = ({product, productPrice}) => {
+const Product = ({product, price}) => {
   return (
     <Container>
         <ProductImage src={product.gallery[0]} alt={product.name} />
@@ -89,7 +89,7 @@ const Product = ({product, productPrice}) => {
             </Icon>
             <ProductName>{product.name}</ProductName>
             <ProductPrice>
-                ${productPrice}
+                ${price}
             </ProductPrice>
         </PrdouctInfo>
     </Container>

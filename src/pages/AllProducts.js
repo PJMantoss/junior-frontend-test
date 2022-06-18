@@ -50,11 +50,11 @@ const AllProducts = () => {
     .then(data => setAllProducts(data.data.category.products))
   }, []);
 
-  const prices = allProducts.map(product => Object.entries(product.prices)[0]);
-  console.log(prices) 
+  const prices = allProducts.map(product => Object.values(product.prices)[0]);
+  // console.log(prices) 
   
-  // const price = prices.map(price => price.amount);
-  // console.log(price); 
+  const price = prices.map(price => price.amount);
+  console.log(price); 
   
   // const productPrice = price.reduce((prev,curr) => {return prev + curr}, 0);
   // console.log(productPrice); productPrice={productPrice}

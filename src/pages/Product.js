@@ -195,6 +195,9 @@ const Price = styled.p`
 `;
 
 const Product = () => {
+
+    useEffect();
+
   return (
     <Container>
         <Wrapper>

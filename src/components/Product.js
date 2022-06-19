@@ -1,6 +1,7 @@
 import React from 'react';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 const Icon = styled.div`
     width: 52px;

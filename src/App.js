@@ -11,7 +11,10 @@ function App() {
   return (
     <div>
       <Navbar />
-      <AllProducts />
+      <Routes>
+        <Route exact path="/" element={<AllProducts />} />
+        <Route path="/products/:id" element={<Product />} />
+      </Routes>
     </div>
   );
 }

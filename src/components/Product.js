@@ -82,18 +82,20 @@ const GET_PRODUCT = `
 
 const Product = ({product, price}) => {
   return (
-    <Container>
-        <ProductImage src={product.gallery[0]} alt={product.name} />
-        <PrdouctInfo>
-            <Icon>
-                <ShoppingCartOutlinedIcon style={{width:"20px", height:"20px"}} />
-            </Icon>
-            <ProductName>{product.name}</ProductName>
-            <ProductPrice>
-                ${price}
-            </ProductPrice>
-        </PrdouctInfo>
-    </Container>
+    <NavLink to="">
+      <Container>
+          <ProductImage src={product.gallery[0]} alt={product.name} />
+          <PrdouctInfo>
+              <Icon>
+                  <ShoppingCartOutlinedIcon style={{width:"20px", height:"20px"}} />
+              </Icon>
+              <ProductName>{product.name}</ProductName>
+              <ProductPrice>
+                  ${price}
+              </ProductPrice>
+          </PrdouctInfo>
+      </Container>
+    </NavLink>
   )
 }
 

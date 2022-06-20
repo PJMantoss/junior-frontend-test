@@ -62,7 +62,7 @@ const AllProducts = () => {
       <Container>
         {/* {JSON.stringify(allProducts, null, 2)} */}
         {allProducts.map(product => (
-          <NavLink to={`/products/${product.id}`}>
+          <NavLink to={`/products/${product.id}`} style={{textDecoration:"none"}}>
             <Product key={product.id} product={product} price={price.shift()} />
           </NavLink>
             )

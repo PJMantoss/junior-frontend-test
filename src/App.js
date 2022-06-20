@@ -9,7 +9,7 @@ import './App.css';
 
 function App() {
   return (
-    <div>
+    <>
       <Navbar />
       <Routes>
         <Route exact path="/" element={<AllProducts />} />
@@ -18,7 +18,7 @@ function App() {
         <Route path="/products/tech" element={<TechProducts />} />
         <Route path="/products/clothes" element={<Clothes />} />
       </Routes>
-    </div>
+    </>
   );
 }
 

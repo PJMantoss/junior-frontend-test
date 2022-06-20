@@ -194,6 +194,22 @@ const Price = styled.p`
     margin-bottom: 20px;
 `;
 
+const GET_PRODUCT = `
+  {
+    category {
+      name
+      products {
+        id
+        name
+        gallery
+        prices {
+          amount
+        }
+      }
+    }
+  }
+`;
+
 const Product = () => {
 
     useEffect(() => {

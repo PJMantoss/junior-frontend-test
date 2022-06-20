@@ -62,7 +62,10 @@ const AllProducts = () => {
       <Container>
         {/* {JSON.stringify(allProducts, null, 2)} */}
         {allProducts.map(product => (
-            <Product key={product.id} product={product} price={price.shift()} />)
+          <NavLink to={`/products/${product.id}`}>
+            <Product key={product.id} product={product} price={price.shift()} />
+          </NavLink>
+            )
           )}
       </Container>
     </>

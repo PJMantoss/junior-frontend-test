@@ -212,7 +212,7 @@ const GET_PRODUCT = `
 `;
 
 const Product = () => {
-    const [singleProduct, setSingleProduct] = useState();
+    const [singleProduct, setSingleProduct] = useState([]);
 
     useEffect(() => {
         fetch("http://localhost:4000/", {
@@ -220,10 +220,10 @@ const Product = () => {
           headers: {"Content-Type": "application/json"},
           body: JSON.stringify({ query: GET_PRODUCT })
         }).then(res => res.json())
-        .then(data => setAllProducts(data.data.category.products))
+        .then(data => setSingleProduct(data.data.category.products))
       }, []);
     
-      const prices = allProducts.map(product => Object.values(product.prices)[0]);
+      const prices = singleProduct.map(product => Object.values(product.prices)[0]);
       
       const price = prices.map(price => price.amount);
       console.log(price)

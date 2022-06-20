@@ -196,7 +196,19 @@ const Price = styled.p`
 
 const Product = () => {
 
-    useEffect(() => {}, []);
+    useEffect(() => {
+        fetch("http://localhost:4000/", {
+          method: "POST",
+          headers: {"Content-Type": "application/json"},
+          body: JSON.stringify({ query: GET_PRODUCT })
+        }).then(res => res.json())
+        .then(data => setAllProducts(data.data.category.products))
+      }, []);
+    
+      const prices = allProducts.map(product => Object.values(product.prices)[0]);
+      
+      const price = prices.map(price => price.amount);
+      console.log(price)
 
   return (
     <Container>

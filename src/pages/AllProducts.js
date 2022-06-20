@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Product from '../components/Product';
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 const Container = styled.div`
   width: 1440px;

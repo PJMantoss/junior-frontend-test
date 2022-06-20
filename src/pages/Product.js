@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import { NavLink, useParams } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -211,6 +212,7 @@ const GET_PRODUCT = `
 `;
 
 const Product = () => {
+    const [singleProduct, setSingleProduct] = useState();
 
     useEffect(() => {
         fetch("http://localhost:4000/", {

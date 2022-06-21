@@ -196,8 +196,8 @@ const Price = styled.p`
 `;
 
 const GET_PRODUCT = `
-query {
-    product(id: "ps-5"){
+query($id: ID!) {
+    product(id: $id){
       id
       name
       gallery

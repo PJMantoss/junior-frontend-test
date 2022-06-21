@@ -234,7 +234,7 @@ const Product = () => {
     <Container>
         <Wrapper>
             <ImagesContainer>
-                <Images />
+                <Images src={singleProduct.gallery} alt={singleProduct.name} />
             </ImagesContainer>
 
             <ImgContainer>

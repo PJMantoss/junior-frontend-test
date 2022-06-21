@@ -210,7 +210,6 @@ const GET_PRODUCT = `
 `;
 
 const Product = () => {
-    const {id} = useParams();
     
     const [singleProduct, setSingleProduct] = useState([]);
 

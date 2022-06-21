@@ -196,19 +196,17 @@ const Price = styled.p`
 `;
 
 const GET_PRODUCT = `
-    query ($id: String!) {
-        category {
-        name
-        products (id: $id) {
-            id
-            name
-            gallery
-            prices {
-            amount
-            }
-        }
-        }
+query {
+    product(id: "ps-5"){
+      id
+      name
+      gallery
+      prices {
+        currency{symbol}
+        amount
+      }
     }
+  }
 `;
 
 const Product = () => {

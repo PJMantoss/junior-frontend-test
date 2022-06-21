@@ -238,7 +238,7 @@ const Product = () => {
             </ImagesContainer>
 
             <ImgContainer>
-                <Images />
+                <Img />
             </ImgContainer>
 
             <InfoContainer>

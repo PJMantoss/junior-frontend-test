@@ -220,7 +220,7 @@ const Product = () => {
           headers: {"Content-Type": "application/json"},
           body: JSON.stringify({ GET_PRODUCT })
         }).then(res => res.json())
-        .then(data => setSingleProduct(data.data.category.products))
+        .then(data => setSingleProduct(data.data.product))
       }, []);
     
     //   const prices = singleProduct.map(product => Object.values(product.prices)[0]);

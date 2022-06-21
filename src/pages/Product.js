@@ -242,7 +242,7 @@ const Product = () => {
             </ImgContainer>
 
             <InfoContainer>
-                <Title>Nike Shoe</Title>
+                <Title>{singleProduct.name}</Title>
                 <Desc>Running Shoes</Desc>
                 <FilterContainer>
                     <Filter>

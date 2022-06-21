@@ -196,19 +196,19 @@ const Price = styled.p`
 `;
 
 const GET_PRODUCT = `
-  {
-    category {
-      name
-      products {
-        id
+    query ($id: String!) {
+        category {
         name
-        gallery
-        prices {
-          amount
+        products (id: $id) {
+            id
+            name
+            gallery
+            prices {
+            amount
+            }
         }
-      }
+        }
     }
-  }
 `;
 
 const Product = () => {
@@ -220,15 +220,15 @@ const Product = () => {
         fetch("http://localhost:4000/", {
           method: "POST",
           headers: {"Content-Type": "application/json"},
-          body: JSON.stringify({ query: GET_PRODUCT })
+          body: JSON.stringify({ GET_PRODUCT })
         }).then(res => res.json())
         .then(data => setSingleProduct(data.data.category.products))
       }, []);
     
-      const prices = singleProduct.map(product => Object.values(product.prices)[0]);
+    //   const prices = singleProduct.map(product => Object.values(product.prices)[0]);
       
-      const price = prices.map(price => price.amount);
-      console.log(price)
+    //   const price = prices.map(price => price.amount);
+    //   console.log(price)
 
   return (
     <Container>

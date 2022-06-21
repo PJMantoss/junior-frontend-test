@@ -212,7 +212,7 @@ query($id: ID!) {
 const Product = () => {
     const {id} = useParams();
     
-    const [singleProduct, setSingleProduct] = useState(id);
+    const [singleProduct, setSingleProduct] = useState([]);
 
     useEffect(() => {
         fetch("http://localhost:4000/", {

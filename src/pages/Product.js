@@ -241,7 +241,7 @@ const Product = () => {
 
             <InfoContainer>
                 <Title>{singleProduct.name}</Title>
-                <Desc>Running Shoes</Desc>
+                <Desc>Lorem ipsum dolo si ta me</Desc>
                 <FilterContainer>
                     <Filter>
                         <FilterTitle>SIZE:</FilterTitle>

@@ -211,7 +211,7 @@ const GET_PRODUCT = `
 
 const Product = () => {
     
-    const [productData, setProductData] = useState([]);
+    const [productData, setProductData] = useState(null);
 
     const getProduct = (id) => {
         fetch("http://localhost:4000/", {
@@ -233,7 +233,7 @@ const Product = () => {
     <Container>
         <Wrapper>
             <ImagesContainer>
-                <Images src={productData.product.gallery} alt={productData.product.name} />
+                <Images src={productData.gallery} alt={productData.name} />
             </ImagesContainer>
 
             <ImgContainer>
@@ -241,7 +241,7 @@ const Product = () => {
             </ImgContainer>
 
             <InfoContainer>
-                <Title>{productData.product.name}</Title>
+                <Title>{productData.name}</Title>
                 <Desc>Lorem ipsum dolo si ta me</Desc>
                 <FilterContainer>
                     <Filter>

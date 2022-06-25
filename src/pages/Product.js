@@ -219,21 +219,21 @@ const Product = () => {
           headers: {"Content-Type": "application/json"},
           body: JSON.stringify({GET_PRODUCT, variables: { id } })
         }).then(res => res.json())
-        .then(data => setProductData(data.data.product));
+        .then(data => console.log(data.data.product));
     };
 
-    getProduct(id);
+    getProduct();
     
     //   const prices = singleProduct.map(product => Object.values(product.prices)[0]);
       
-    //   const price = prices.map(price => price.amount);
-    //   console.log(price)
+    //   const price = prices.map(price => price.amount); {productData.name}
+    //   console.log(price) src={productData.gallery} alt={productData.name}
 
   return (
     <Container>
         <Wrapper>
             <ImagesContainer>
-                <Images src={productData.gallery} alt={productData.name} />
+                <Images />
             </ImagesContainer>
 
             <ImgContainer>
@@ -241,7 +241,7 @@ const Product = () => {
             </ImgContainer>
 
             <InfoContainer>
-                <Title>{productData.name}</Title>
+                <Title></Title>
                 <Desc>Lorem ipsum dolo si ta me</Desc>
                 <FilterContainer>
                     <Filter>

@@ -196,7 +196,7 @@ const Price = styled.p`
 `;
 
 const GET_PRODUCT = `
-query($id: String!){
+query($id: String) {
     product(id: $id){
       id
       name
@@ -211,7 +211,7 @@ query($id: String!){
 
 const Product = () => {
     
-    const [singleProduct, setSingleProduct] = useState([]);
+    const [singleProduct, setSingleProduct] = useState('');
 
     useEffect(() => {
         fetch("http://localhost:4000/", {

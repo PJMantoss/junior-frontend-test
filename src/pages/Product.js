@@ -215,7 +215,7 @@ const Product = () => {
 
     useEffect(() => {
         fetch("http://localhost:4000/", {
-          method: "GET",
+          method: "POST",
           headers: {"Content-Type": "application/json"},
           body: JSON.stringify({ GET_PRODUCT })
         }).then(res => res.json())

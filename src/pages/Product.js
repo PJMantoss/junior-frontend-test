@@ -242,7 +242,7 @@ const Product = () => {
                 {singleProduct.map(product => (
                     <Title>{product.name}</Title>
                     )
-                }
+                )
                 <Desc>Lorem ipsum dolo si ta me</Desc>
                 <FilterContainer>
                     <Filter>

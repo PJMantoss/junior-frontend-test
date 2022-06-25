@@ -215,7 +215,7 @@ const Product = () => {
 
     useEffect(() => {
         const getProduct = (id) => {
-            fetch("http://localhost:4000/", {
+            fetch(`http://localhost:4000/${id}`, {
               method: "POST",
               headers: {"Content-Type": "application/json"},
               body: JSON.stringify({GET_PRODUCT, variables: { id } })
@@ -223,7 +223,7 @@ const Product = () => {
             .then(data => console.log(data.data.product));
         };
     
-        getProduct({id});
+        getProduct();
     }, [])
     
     //   const prices = singleProduct.map(product => Object.values(product.prices)[0]);

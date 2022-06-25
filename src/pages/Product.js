@@ -239,10 +239,7 @@ const Product = () => {
             </ImgContainer>
 
             <InfoContainer>
-                {singleProduct.map(product => (
-                    <Title>{product.name}</Title>
-                    )
-                )}
+                <Title>{singleProduct.name}</Title>
                 <Desc>Lorem ipsum dolo si ta me</Desc>
                 <FilterContainer>
                     <Filter>

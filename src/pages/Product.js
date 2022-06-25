@@ -197,7 +197,7 @@ const Price = styled.p`
 
 const GET_PRODUCT = `
  {
-    product(id: $id){
+    product{
       id
       name
       gallery

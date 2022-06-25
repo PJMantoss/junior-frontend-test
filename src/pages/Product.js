@@ -218,7 +218,7 @@ const Product = () => {
             fetch(`http://localhost:4000/${id}`, {
               method: "POST",
               headers: {"Content-Type": "application/json"},
-              body: JSON.stringify({GET_PRODUCT, variables: { id } })
+              body: JSON.stringify({GET_PRODUCT})
             }).then(res => res.json())
             .then(data => console.log(data.data.product));
         };

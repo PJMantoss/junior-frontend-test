@@ -223,7 +223,7 @@ const Product = () => {
             .then(data => console.log(data.data.product));
         };
     
-        getProduct();
+        getProduct({id});
     }, [])
     
     //   const prices = singleProduct.map(product => Object.values(product.prices)[0]);

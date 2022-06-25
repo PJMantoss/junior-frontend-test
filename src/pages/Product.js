@@ -211,18 +211,20 @@ const GET_PRODUCT = `
 
 const Product = () => {
     
-    const [productData, setProductData] = useState(null);
+    const [productData, setProductData] = useState({});
 
-    const getProduct = (id) => {
-        fetch("http://localhost:4000/", {
-          method: "POST",
-          headers: {"Content-Type": "application/json"},
-          body: JSON.stringify({GET_PRODUCT, variables: { id } })
-        }).then(res => res.json())
-        .then(data => console.log(data.data.product));
-    };
-
-    getProduct();
+    useEffect(() => {
+        const getProduct = (id) => {
+            fetch("http://localhost:4000/", {
+              method: "POST",
+              headers: {"Content-Type": "application/json"},
+              body: JSON.stringify({GET_PRODUCT, variables: { id } })
+            }).then(res => res.json())
+            .then(data => console.log(data.data.product));
+        };
+    
+        getProduct();
+    }, [])
     
     //   const prices = singleProduct.map(product => Object.values(product.prices)[0]);
       

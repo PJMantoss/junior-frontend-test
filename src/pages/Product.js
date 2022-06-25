@@ -196,8 +196,8 @@ const Price = styled.p`
 `;
 
 const GET_PRODUCT = `
- {
-    product(){
+ query FetchData($id: String!){
+    product(id: $id){
       id
       name
       gallery
@@ -217,7 +217,7 @@ const Product = () => {
         fetch("http://localhost:4000/", {
           method: "POST",
           headers: {"Content-Type": "application/json"},
-          body: JSON.stringify({ query: GET_PRODUCT })
+          body: JSON.stringify({GET_PRODUCT, variables: { id } })
         }).then(res => res.json())
         .then(data => console.log(data.data.product));
       }, []);

@@ -222,7 +222,7 @@ const Product = () => {
         .then(data => setProductData(data.data.product));
     };
 
-    getProduct();
+    getProduct(id);
     
     //   const prices = singleProduct.map(product => Object.values(product.prices)[0]);
       

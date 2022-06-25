@@ -213,14 +213,16 @@ const Product = () => {
     
     const [productData, setProductData] = useState([]);
 
-    useEffect((id) => {
+    const getProduct = (id) => {
         fetch("http://localhost:4000/", {
           method: "POST",
           headers: {"Content-Type": "application/json"},
           body: JSON.stringify({GET_PRODUCT, variables: { id } })
         }).then(res => res.json())
-        .then(data => console.log(data.data.product));
-      }, []);
+        .then(data => setProductData(data));
+    };
+
+    getProduct();
     
     //   const prices = singleProduct.map(product => Object.values(product.prices)[0]);
       
@@ -231,7 +233,7 @@ const Product = () => {
     <Container>
         <Wrapper>
             <ImagesContainer>
-                <Images src={singleProduct.gallery} alt={singleProduct.name} />
+                <Images src={productData.data.product.gallery} alt={productData.data.product.name} />
             </ImagesContainer>
 
             <ImgContainer>
@@ -239,7 +241,7 @@ const Product = () => {
             </ImgContainer>
 
             <InfoContainer>
-                <Title>{singleProduct.name}</Title>
+                <Title>{productData.data.product.name}</Title>
                 <Desc>Lorem ipsum dolo si ta me</Desc>
                 <FilterContainer>
                     <Filter>

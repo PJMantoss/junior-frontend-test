@@ -197,7 +197,7 @@ const Price = styled.p`
 
 const GET_PRODUCT = `
  {
-    product{
+    product(){
       id
       name
       gallery
@@ -213,7 +213,7 @@ const Product = () => {
     
     const [singleProduct, setSingleProduct] = useState("");
 
-    useEffect(() => {
+    useEffect((id) => {
         fetch("http://localhost:4000/", {
           method: "POST",
           headers: {"Content-Type": "application/json"},

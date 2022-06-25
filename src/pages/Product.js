@@ -211,7 +211,7 @@ const GET_PRODUCT = `
 
 const Product = () => {
     
-    const [singleProduct, setSingleProduct] = useState("");
+    const [productData, setProductData] = useState([]);
 
     useEffect((id) => {
         fetch("http://localhost:4000/", {

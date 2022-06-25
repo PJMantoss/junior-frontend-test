@@ -219,7 +219,7 @@ const Product = () => {
           headers: {"Content-Type": "application/json"},
           body: JSON.stringify({GET_PRODUCT, variables: { id } })
         }).then(res => res.json())
-        .then(data => setProductData(data));
+        .then(data => setProductData(data.data.product));
     };
 
     getProduct();
@@ -233,7 +233,7 @@ const Product = () => {
     <Container>
         <Wrapper>
             <ImagesContainer>
-                <Images src={productData.data.product.gallery} alt={productData.data.product.name} />
+                <Images src={productData.product.gallery} alt={productData.product.name} />
             </ImagesContainer>
 
             <ImgContainer>
@@ -241,7 +241,7 @@ const Product = () => {
             </ImgContainer>
 
             <InfoContainer>
-                <Title>{productData.data.product.name}</Title>
+                <Title>{productData.product.name}</Title>
                 <Desc>Lorem ipsum dolo si ta me</Desc>
                 <FilterContainer>
                     <Filter>
